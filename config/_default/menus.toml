@@ -3,70 +3,91 @@
 #     desired widget in your `content/home/` folder.
 #   The weight parameter defines the order that the links will appear in.
 
-[[main]]
-  name = "About"
-  url = "about/"
-  weight = 10
-  
-#[[main]]
-#  name = "Books"
-#  url = "books/"
-#  weight = 20
-
-[[main]]
-  identifier ="written_books"
-  parent = "Books"
-  name = "Written Books"
-  url = "books/written_books"
-  weight = 20
-
-[[main]]
-  identifier ="recommended_books"
-  parent = "Books"
-  name = "Recommended Books"
-  url = "books/recommended_books"
-  weight = 25
-
-#[[main]]
-#  name = "Publications"
-#  url = "publications/"
-#  weight = 30
-
-[[main]]
-  name = "Projects"
-  url = "projects/"
-  weight = 40
-  
-[[main]]
-  name = "Posts"
-  url = "#posts"
-  weight = 50
-
+#Add your own indices
 [[main]]
   name = "Teaching"
   url = "courses/"
-  weight = 60
-  
-[[main]]
-  name = "Talks"
-  url = "talk"
-  weight = 70
+  weight = 10
 
 [[main]]
-  name = "Data"
-  url = "data/"
-  weight = 80
-
-[[main]]
-  name = "Contact"
-  url = "#contact"
-  weight = 90
-  
+  name = "Research"
+  url = "projects/"
+  weight = 20
 
 
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 [[main]]
   name = "CV"
-  url = "media/Mike Nguyen CV.pdf"
-  weight = 100
+  url = "media/Kyle Zimmerschied CV.pdf"
+  weight = 30
+
+
+#Mike's indices
+#[[main]]
+  #name = "About"
+  #url = "about/"
+  #weight = 10
+  
+#[[main]]
+#  name = "Books"
+#  url = "books/"
+#  weight = 20
+
+#[[main]]
+#  identifier ="written_books"
+#  parent = "Books"
+#  name = "Written Books"
+#  url = "books/written_books"
+#  weight = 20
+
+#[[main]]
+#  identifier ="recommended_books"
+#  parent = "Books"
+#  name = "Recommended Books"
+#  url = "books/recommended_books"
+#  weight = 25
+
+#[[main]]
+#  name = "Publications"
+#  url = "publications/"
+#  weight = 30
+
+#[[main]]
+#  name = "Projects"
+#  url = "projects/"
+#  weight = 40
+  
+#[[main]]
+#  name = "Posts"
+#  url = "#posts"
+#  weight = 50
+
+#[[main]]
+#  name = "Teaching"
+#  url = "courses/"
+#  weight = 60
+  
+#[[main]]
+#  name = "Talks"
+#  url = "talk"
+#  weight = 70
+
+#[[main]]
+#  name = "Data"
+#  url = "data/"
+#  weight = 80
+
+#[[main]]
+#  name = "Contact"
+#  url = "#contact"
+#  weight = 90
+  
+
+
+# Link to a PDF of your resume/CV from the menu.
+# To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
+#[[main]]
+#  name = "CV"
+#  url = "media/Mike Nguyen CV.pdf"
+#  weight = 100
