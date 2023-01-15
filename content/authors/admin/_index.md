@@ -2,25 +2,28 @@
 bio: My research interests include marketing, and social science.
 education:
   courses:
-  - course: PhD in Marketing - minor Statistics
+  - course: Ph.D. in Finance
     institution: University of Missouri
-    year: 2023
+    year: Expected 2025
   - course: MA in Economics - Econometrics and Quantitative Economics
     institution: University of Missouri
-    year: 2021
-  - course: MBA in Marketing Analytics, Corporate Finance
-    institution: University of Delaware
-    year: 2019
-  - course: BBA in Marketing, International Business
-    institution: Florida International University
-    year: 2018
-email: "mikenguyen@mail.missouri.edu"
+    year: Expected 2023
+  - course: BS in Economics
+    institution: University of Missouri
+    year: 2020
+  - course: BS in Statistics
+    institution: University of Missouri
+    year: 2020
+  - course: BSBA in Finance
+    institution: University of Missouri
+    year: 2020
+email: "kylezimmerschied@mail.missouri.edu"
 highlight_name: true
 
 interests:
-- Marketing
-- Finance
-- Statistics
+- IPO
+- Private Equity
+- Public vs. Private Markets
 
 organizations:
 - name: University of Missouri
@@ -30,39 +33,26 @@ social:
 - icon: envelope
   icon_pack: fas
   link: /#contact
-- icon: graduation-cap
-  icon_pack: fas
-  link: https://scholar.google.com/citations?user=vDKbGioAAAAJ&hl=en
-- icon: github
-  icon_pack: fab
-  link: https://github.com/mikenguyen13
 - icon: linkedin
   icon_pack: fab
-  link: https://www.linkedin.com/in/mikenguyenbio/
-- icon: orcid
-  icon_pack: fab
-  link: https://orcid.org/0000-0002-3432-8595
-- icon: researchgate
-  icon_pack: fab
-  link: https://www.researchgate.net/profile/Mike_Nguyen20
-- icon: publons
-  icon_pack: ai
-  link: https://publons.com/researcher/2928438/mike-nguyen/
+  link: https://www.linkedin.com/in/kylezimmerschied/
 - icon: ssrn
   icon_pack: ai
-  link: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=4424295
+  link: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=3048496
   
 superuser: true
-title: Mike Nguyen
+title: Kyle Zimmerschied
 user_groups:
 - Principal Investigators
 ---
 
-My name is Mike Nguyen. I am a Ph.D. candidate and data scientist in marketing at the University of Missouri. My research interests include   
+I am a Ph.D. candidate at the [Trulaske College of Business](https://business.missouri.edu/) at the [University of Missouri](https://missouri.edu/). 
 
- * **Conceptual:** Brand Equity, Virality, Charisma  
- * **Substantive:** Branding, Advertising, Online Platform
- * **Methodological:** Econometrics, Machine Learning, Causal Inference
+My research focuses on empirical corporate finance, innovation, and investments. 
 
-{{< icon name="download" pack="fas" >}} Download my resume in {{< staticref "media/Mike Nguyen CV.pdf" "newtab" >}} PDF {{< /staticref >}} and {{< staticref "media/Mike Nguyen CV.docx" "newtab" >}} Word {{< /staticref >}}.
+Prior to the Ph.D. program, I earned a Bachelor of Science in Economics (Honors), Bachelor of Science in Statistics, and a Bachelor of Science in Business Administration with an emphasis in Finance from the [University of Missouri](https://missouri.edu/). 
+
+Outside of research and teaching, I enjoy spending time with family, playing and coaching sports, and [following Jesus](https://odb.org/). 
+
+{{< icon name="download" pack="fas" >}} Download my {{< staticref "media/Kyle Zimmerschied CV.pdf" "newtab" >}}CV PDF {{< /staticref >}}
 
