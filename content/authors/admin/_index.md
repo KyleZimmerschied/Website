@@ -54,5 +54,5 @@ Prior to the Ph.D. program, I earned a Bachelor of Science in Economics (Honors)
 
 Outside of research and teaching, I enjoy spending time with family, playing and coaching sports, and [following Jesus](https://odb.org/). 
 
-{{< icon name="download" pack="fas" >}} Download my {{< staticref "media/Kyle Zimmerschied CV.pdf" "newtab" >}}CV PDF {{< /staticref >}}
+{{< icon name="download" pack="fas" >}} Download my {{< staticref "media/Kyle Zimmerschied CV.pdf" "newtab" >}}CV{{< /staticref >}}
 
