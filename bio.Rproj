@@ -13,4 +13,4 @@ RnwWeave: Sweave
 LaTeX: pdfLaTeX
 
 BuildType: Website
-WebsitePath: C:/Users/tn9k4/GitHub/bio
+WebsitePath: C:/Users/kylez/OneDrive - University of Missouri/Website/bio
