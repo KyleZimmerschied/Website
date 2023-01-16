@@ -28,7 +28,7 @@ interests:
 organizations:
 - name: University of Missouri
   url: https://business.missouri.edu/
-role: PhD Candidate
+role: Finance PhD Candidate
 social:
 - icon: envelope
   icon_pack: fas
@@ -52,7 +52,7 @@ My research focuses on empirical corporate finance, innovation, and investments.
 
 Prior to the Ph.D. program, I earned a Bachelor of Science in Economics (Honors), Bachelor of Science in Statistics, and a Bachelor of Science in Business Administration with an emphasis in Finance from the [University of Missouri](https://missouri.edu/). 
 
-Outside of research and teaching, I enjoy spending time with family, playing and coaching sports, and [following Jesus](https://odb.org/). 
+Outside of research and teaching, I enjoy spending time with family, playing and coaching sports, and serving others. 
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "media/Kyle Zimmerschied CV.pdf" "newtab" >}}CV{{< /staticref >}}
 
