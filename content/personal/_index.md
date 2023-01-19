@@ -8,7 +8,6 @@ summary: "Personal Beliefs" # Add a page description
 headless: false
 ---
 
-* At its core three existential questions should greatly impact the way we live on Earth
-1. How did we get here?
-2. What am I supposed to be doing here?
-3. What happens after my life on Earth?
+__Links__\
+[Forum Christian Church](https://www.forumchristian.org/)\
+[Christian Finance Faculty Assocation](https://sites.baylor.edu/shane_underwood/cffa/)
