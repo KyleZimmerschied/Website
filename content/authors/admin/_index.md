@@ -30,9 +30,6 @@ organizations:
   url: https://business.missouri.edu/
 role: Finance PhD Candidate
 social:
-- icon: envelope
-  icon_pack: fas
-  link: /#contact
 - icon: linkedin
   icon_pack: fab
   link: https://www.linkedin.com/in/kylezimmerschied/
