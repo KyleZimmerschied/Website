@@ -7,7 +7,7 @@ education:
     year: Expected 2025
   - course: MA in Economics - Econometrics and Quantitative Economics
     institution: University of Missouri
-    year: Expected 2023
+    year: 2023
   - course: BS in Economics
     institution: University of Missouri
     year: 2020
@@ -21,9 +21,9 @@ email: "kylezimmerschied@mail.missouri.edu"
 highlight_name: true
 
 interests:
-- IPO
+- Entrepreneurial Finance
 - Private Equity
-- Public vs. Private Markets
+- Nonprofits
 
 organizations:
 - name: University of Missouri
