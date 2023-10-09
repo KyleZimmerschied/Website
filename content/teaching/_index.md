@@ -9,9 +9,9 @@ headless: false
 ---
 
 __Instructor__
-
+*	FINANC 4010/7010--Financial Management (4.8/5) Spring 2023
+	+ Download my {{< staticref "media/Spring 2023 Evaluation.pdf" "newtab" >}}Spring 2023
 *   FINANC 4010/7010--Financial Management (4.5/5) Fall 2022 
     + Download my {{< staticref "media/Fall 2022 Evaluation.pdf" "newtab" >}}Fall 2022 Evaluations{{< /staticref >}}
-*	FINANC 4010/7010--Financial Management (4.8/5) Spring 2023
-	+ Download my {{< staticref "media/Spring 2023 Evaluation.pdf" "newtab" >}}Spring 2023 Evaluations
+ Evaluations
 	
