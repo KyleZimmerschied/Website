@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Recommended Books | Mike Nguyen</title>
+    <title>Recommended Books | Kyle Zimmerschied</title>
     <link>https://mikenguyen.netlify.app/books/recommended_books/</link>
       <atom:link href="https://mikenguyen.netlify.app/books/recommended_books/index.xml" rel="self" type="application/rss+xml" />
     <description>Recommended Books</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© Mike Nguyen 2023</copyright>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© Kyle Zimmerschied 2023</copyright>
     <image>
       <url>https://mikenguyen.netlify.app/media/social_sharing_image.png</url>
       <title>Recommended Books</title>
