@@ -28,6 +28,6 @@ headless: false
 2. Private Equity Endowments
 * With [Abhishek Bhardwaj](https://www.abhishek-bhardwaj.com/), [Abhinav Gupta](https://www.kenan-flagler.unc.edu/faculty/directory/abhinav-gupta/), and [Sabrina Howell](https://www.stern.nyu.edu/faculty/bio/sabrina-howell)
 3. Green IPOs
-*  with [Wan-Chien Chiu](https://sites.google.com/site/wanchienchiu?pli=1) and [Po-Hsuan Hsu](http://oir.ctm.nthu.edu.tw/p/16-1487-164292.php)
+*  With [Wan-Chien Chiu](https://sites.google.com/site/wanchienchiu?pli=1) and [Po-Hsuan Hsu](http://oir.ctm.nthu.edu.tw/p/16-1487-164292.php)
 4. The Role of Debt in Financing Higher Education
 * With [Matteo Binfare](https://sites.google.com/site/matteobinfare/)
