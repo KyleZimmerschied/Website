@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Teaching | Kyle Zimmerschied</title>
+    <link>https://mikenguyen.netlify.app/teaching/</link>
+      <atom:link href="https://mikenguyen.netlify.app/teaching/index.xml" rel="self" type="application/rss+xml" />
+    <description>Teaching</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© Kyle Zimmerschied 2023</copyright>
+    <image>
+      <url>https://mikenguyen.netlify.app/media/social_sharing_image.png</url>
+      <title>Teaching</title>
+      <link>https://mikenguyen.netlify.app/teaching/</link>
+    </image>
+    
+  </channel>
+</rss>

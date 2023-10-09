@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Source Themes | Mike Nguyen</title>
+    <title>Source Themes | Kyle Zimmerschied</title>
     <link>https://mikenguyen.netlify.app/tag/source-themes/</link>
       <atom:link href="https://mikenguyen.netlify.app/tag/source-themes/index.xml" rel="self" type="application/rss+xml" />
     <description>Source Themes</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© Mike Nguyen 2023</copyright><lastBuildDate>Sat, 10 Dec 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© Kyle Zimmerschied 2023</copyright><lastBuildDate>Sat, 10 Dec 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://mikenguyen.netlify.app/media/social_sharing_image.png</url>
       <title>Source Themes</title>
