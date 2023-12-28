@@ -26,6 +26,10 @@
   url = "media/Kyle Zimmerschied CV.pdf"
   weight = 40
 
+[[main]]
+  name = "Photos"
+  url = "photos/"
+  weight = 30
 
 #Mike's indices
 #[[main]]
