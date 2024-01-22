@@ -17,7 +17,7 @@ headless: false
 + We study the asset allocation, spending behavior, fees, and investment performance of U.S. private foundations. We find that large foundations          generate positive risk-adjusted returns of about one percent per year. Larger and more sophisticated foundations perform better and invest more         aggressively. Foundations with concentrated stock holdings have higher returns but also take on more risk. Because of the constraints imposed by the     five percent minimum spending rule and accommodating monetary policy, private foundations increase their risk-taking and reach for yield. Due to        these constraints, a conservative asset allocation will decrease real wealth over time resulting in less charitable giving.
 
 2. {{< staticref "media/Income_Pooling Draft.pdf" "newtab" >}}"Diversifying Labor Income Risk: Evidence from Income Pooling"{{< /staticref >}}
-
+    + See the {{< staticref "media/Income_Pooling Slides.pdf" "newtab" >}}slides{{< /staticref >}}
 + This paper studies the effects of a contracting innovation which allows individuals to diversify
 their labor income risk by sharing labor income above a ceiling into a common pool. I use novel
 data from professional baseball players to document sign-up correlated with an individual’s level
