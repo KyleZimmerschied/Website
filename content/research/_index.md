@@ -12,7 +12,7 @@ headless: false
 
 1. {{< staticref "media/Private_Foundations_Draft_BZ.pdf" "newtab" >}}"Investing with Purpose: Evidence from Private Foundations"{{< /staticref >}}
 * With [Matteo Binfare](https://sites.google.com/site/matteobinfare/)
-    + Revise and Resubmit at __Journal of Finance__
+    + Revise and Resubmit at __The Journal of Finance__
     + See the {{< staticref "media/Private Foundations Slides.pdf" "newtab" >}}slides{{< /staticref >}}
 + We study the asset allocation, spending behavior, fees, and investment performance of U.S. private foundations. We find that large foundations          generate positive risk-adjusted returns of about one percent per year. Larger and more sophisticated foundations perform better and invest more         aggressively. Foundations with concentrated stock holdings have higher returns but also take on more risk. Because of the constraints imposed by the     five percent minimum spending rule and accommodating monetary policy, private foundations increase their risk-taking and reach for yield. Due to        these constraints, a conservative asset allocation will decrease real wealth over time resulting in less charitable giving.
 
