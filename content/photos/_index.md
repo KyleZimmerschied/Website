@@ -51,6 +51,11 @@ headless: false
   <figcaption>Coaching Upwards Basketball 2022</figcaption>
 </figure>
 
+<figure>
+  <img src="/media/Photos/SpecialOlympicsPickleball.jpg" alt="Special Olympics Pickleball">
+  <figcaption>Special Olympics Pickleball 2023</figcaption>
+</figure>
+
 
 <figure>
   <img src="/media/Photos/Matt Pickleball.jpg" alt="SMSG Matt">
