@@ -21,9 +21,9 @@ email: "kylezimmerschied@mail.missouri.edu"
 highlight_name: true
 
 interests:
+- Alternative Investments
 - Nonprofits
-- Inequality
-- Innovation
+- Entrepreneurial Finance
 
 organizations:
 - name: University of Missouri

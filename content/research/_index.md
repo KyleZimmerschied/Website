@@ -35,10 +35,14 @@ information asymmetries.
     innovation and the recent IPO literature that instruments for IPO completion using
     the post-filing returns on the Nasdaq stock index.
     
+## __Publications__
+1. {{< staticref "media/NBER University Debt.pdf" "newtab" >}}"The Role of Debt in Financing Higher Education"{{< /staticref >}}, 2024, _NBER: Financing Institutions of Higher Education_
+* With [Matteo Binfare](https://sites.google.com/site/matteobinfare/)
+    + See the {{< staticref "media/NBER University Debt Slides.pdf" "newtab" >}}slides{{< /staticref >}}
+
 ## __Works in Progress__
 1. Private Equity Endowments
 * With [Abhishek Bhardwaj](https://www.abhishek-bhardwaj.com/), [Abhinav Gupta](https://www.kenan-flagler.unc.edu/faculty/directory/abhinav-gupta/), and [Sabrina Howell](https://www.stern.nyu.edu/faculty/bio/sabrina-howell)
 2. Green IPOs
 *  With [Wan-Chien Chiu](https://sites.google.com/site/wanchienchiu?pli=1) and [Po-Hsuan Hsu](http://oir.ctm.nthu.edu.tw/p/16-1487-164292.php)
-3. The Role of Debt in Financing Higher Education
-* With [Matteo Binfare](https://sites.google.com/site/matteobinfare/)
+ 
