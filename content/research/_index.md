@@ -45,6 +45,7 @@ information asymmetries.
 ## __Publications__
 1. {{< staticref "media/NBER University Debt.pdf" "newtab" >}}"The Role of Debt in Financing Higher Education"{{< /staticref >}}, 2024, _NBER: Financing Institutions of Higher Education_
 * With [Matteo Binfare](https://sites.google.com/site/matteobinfare/)
+    + See the [preliminary version](https://www.nber.org/books-and-chapters/financing-institutions-higher-education/role-debt-financing-higher-education)
     + See the {{< staticref "media/NBER University Debt Slides.pdf" "newtab" >}}slides{{< /staticref >}}
 
 ## __Works in Progress__
