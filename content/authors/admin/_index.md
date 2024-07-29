@@ -45,7 +45,7 @@ user_groups:
 
 I am a Ph.D. candidate at the [Trulaske College of Business](https://business.missouri.edu/) at the [University of Missouri](https://missouri.edu/). 
 
-My research focuses on empirical corporate finance, innovation, and investments. 
+My research focuses on alternative investments, nonprofits, and entrepreneurial finance.
 
 Prior to the Ph.D. program, I earned a Bachelor of Science in Economics (Honors), Bachelor of Science in Statistics, and a Bachelor of Science in Business Administration with an emphasis in Finance from the [University of Missouri](https://missouri.edu/). 
 
