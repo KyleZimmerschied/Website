@@ -43,7 +43,7 @@ user_groups:
 - Principal Investigators
 ---
 
-I am a Ph.D. candidate at the [Trulaske College of Business](https://business.missouri.edu/) at the [University of Missouri](https://missouri.edu/). 
+I am a Ph.D. candidate in Finance at the [Trulaske College of Business](https://business.missouri.edu/) at the [University of Missouri](https://missouri.edu/). I will be on the 2024-2025 job market. 
 
 My research focuses on alternative investments, nonprofits, and entrepreneurial finance.
 
