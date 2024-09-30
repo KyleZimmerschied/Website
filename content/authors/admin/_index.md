@@ -22,7 +22,7 @@ highlight_name: true
 
 interests:
 - Alternative Investments
-- Nonprofits
+- Public Finance
 - Entrepreneurial Finance
 
 organizations:
@@ -45,7 +45,7 @@ user_groups:
 
 I am a Ph.D. candidate in Finance at the [Trulaske College of Business](https://business.missouri.edu/) at the [University of Missouri](https://missouri.edu/). I will be on the 2024-2025 job market. 
 
-My research focuses on alternative investments, nonprofits, and entrepreneurial finance.
+My research focuses on alternative investments, public finance, and entrepreneurial finance.
 
 Prior to the Ph.D. program, I earned a Bachelor of Science in Economics (Honors), Bachelor of Science in Statistics, and a Bachelor of Science in Business Administration with an emphasis in Finance from the [University of Missouri](https://missouri.edu/). 
 
