@@ -12,11 +12,13 @@ headless: false
 
 1. {{< staticref "media/Private_Foundations_Draft_BZ.pdf" "newtab" >}}"Investing with Purpose: Evidence from Private Foundations"{{< /staticref >}}
 * With [Matteo Binfare](https://sites.google.com/site/matteobinfare/)
-    + Revise and Resubmit at __The Journal of Finance__
+    + Revise and Resubmit at __the Journal of Finance__
     + See the {{< staticref "media/Private Foundations Slides.pdf" "newtab" >}}slides{{< /staticref >}}
 + We study the asset allocation, spending behavior, fees, and investment performance of U.S. private foundations. We find that large foundations generate positive risk-adjusted returns of about one percent per year. Larger and more sophisticated foundations perform better and invest more aggressively. Foundations with concentrated stock holdings have higher returns but also take on more risk. Because of the constraints imposed by the five percent minimum spending rule and accommodating monetary policy, private foundations increase their risk-taking and reach for yield. Due to these constraints, a conservative asset allocation will decrease real wealth over time resulting in less charitable giving.
 
 2. {{< staticref "media/Immigration and Municipal Bond Yields.pdf" "newtab" >}}"Should They Stay or Should They Go? Immigration and Municipal Bonds"{{< /staticref >}} 
+    + Selected for Dual Submission at __the Journal of Financial Economics__
+    + See the {{< staticref "media/Immigration and Municipal Bond Yields Slides.pdf" "newtab" >}}slides{{< /staticref >}}
 + Immigration stimulates economic growth, but it also increases the demand for local public resources. This paper causally examines the impact of immigration on the local government’s access to finance to evaluate this trade-off. I find that immigration inflows improve local government access to finance, as evidenced by a decline in municipal bond yields. I instrument for current immigrants’ settlement decisions using historical migration patterns of immigrants from 1880 onward, interacted with the flow of incoming immigrants. I find similar effects using the staggered adoption of the Secure Communities Act which increased the likelihood of detainment for undocumented immigrants. These effects are stronger for communities located further from the border, with higher operating margins, and with older demographics. Immigrants of higher education levels provide stronger benefits to the communities they settle in. The positive impact of immigration is driven by an expansion in the local labor market and an enhanced ability to fund collateral, rather than economies of scale. These findings provide evidence of the positive benefits immigrants bring to local communities.
 
 3. Private Equity Endowments
