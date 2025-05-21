@@ -51,5 +51,7 @@ Prior to the Ph.D. program, I earned a Bachelor of Science in Economics (Honors)
 
 Outside of research and teaching, I enjoy spending time with family, playing and coaching sports, and serving others. 
 
+I will join the [Sam M. Walton College of Business](https://walton.uark.edu/) at the [University of Arkansas](https://www.uark.edu/) as an Assistant Professor of Finance in Fall 2025.
+
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "media/Kyle Zimmerschied CV.pdf" "newtab" >}}CV{{< /staticref >}}
 
