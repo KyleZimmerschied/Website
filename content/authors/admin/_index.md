@@ -4,8 +4,8 @@ education:
   courses:
   - course: Ph.D. in Finance
     institution: University of Missouri
-    year: Expected 2025
-  - course: MA in Economics - Econometrics and Quantitative Economics
+    year: 2025
+  - course: MA in Economics (Econometrics and Quantitative Economics)
     institution: University of Missouri
     year: 2023
   - course: BS in Economics
@@ -22,13 +22,14 @@ highlight_name: true
 
 interests:
 - Alternative Investments
+- Household Finance
 - Public Finance
 - Entrepreneurial Finance
 
 organizations:
-- name: University of Missouri
-  url: https://business.missouri.edu/
-role: Finance PhD Candidate
+- name: University of Arkansas
+  url: https://walton.uark.edu/
+role: Assistant Professor of Finance
 social:
 - icon: linkedin
   icon_pack: fab
@@ -43,15 +44,13 @@ user_groups:
 - Principal Investigators
 ---
 
-I am a Ph.D. candidate in Finance at the [Trulaske College of Business](https://business.missouri.edu/) at the [University of Missouri](https://missouri.edu/).
+I am an Assistant Professor of Finance at the [Sam M. Walton College of Business](https://walton.uark.edu/) at the [University of Arkansas](https://www.uark.edu/).
 
-My research focuses on alternative investments, public finance, and entrepreneurial finance.
+My research focuses on alternative investments, household finance, public finance, and entrepreneurial finance.
 
-Prior to the Ph.D. program, I earned a Bachelor of Science in Economics (Honors), Bachelor of Science in Statistics, and a Bachelor of Science in Business Administration with an emphasis in Finance from the [University of Missouri](https://missouri.edu/). 
+I completed my Ph.D. in Finance at the [Trulaske College of Business](https://business.missouri.edu/) at the [University of Missouri](https://missouri.edu/). Prior to the Ph.D. program, I earned a Bachelor of Science in Economics (Honors), Bachelor of Science in Statistics, and a Bachelor of Science in Business Administration with an emphasis in Finance from the [University of Missouri](https://missouri.edu/). 
 
 Outside of research and teaching, I enjoy spending time with family, playing and coaching sports, and serving others. 
-
-I will join the [Sam M. Walton College of Business](https://walton.uark.edu/) at the [University of Arkansas](https://www.uark.edu/) as an Assistant Professor of Finance in Fall 2025.
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "media/Kyle Zimmerschied CV.pdf" "newtab" >}}CV{{< /staticref >}}
 
