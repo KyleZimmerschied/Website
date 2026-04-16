@@ -28,7 +28,7 @@
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 [[main]]
   name = "CV"
-  url = "media/Kyle Zimmerschied CV.pdf"
+  url = "media/Kyle_Zimmerschied_CV.pdf"
   weight = 50
 
 #Mike's indices
