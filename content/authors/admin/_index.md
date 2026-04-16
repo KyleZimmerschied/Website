@@ -52,5 +52,5 @@ I completed my Ph.D. in Finance at the [Trulaske College of Business](https://bu
 
 Outside of research and teaching, I enjoy spending time with family, playing and coaching sports, and serving others. 
 
-{{< icon name="download" pack="fas" >}} Download my {{< staticref "media/Kyle_Zimmerschied_CV.pdf" "newtab" >}}CV{{< /staticref >}}
+{{< icon name="download" pack="fas" >}} Download my {{< staticref "media/Kyle Zimmerschied CV.pdf" "newtab" >}}CV{{< /staticref >}}
 
