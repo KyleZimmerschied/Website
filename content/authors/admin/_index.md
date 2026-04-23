@@ -46,7 +46,7 @@ user_groups:
 
 I am an Assistant Professor of Finance at the [Sam M. Walton College of Business](https://walton.uark.edu/) at the [University of Arkansas](https://www.uark.edu/).
 
-My research focuses on alternative investments, household finance, and public finance.
+My research focuses on alternative investments, household finance, public finance, and entrepreneurial finance.
 
 I completed my Ph.D. in Finance at the [Trulaske College of Business](https://business.missouri.edu/) at the [University of Missouri](https://missouri.edu/). Prior to the Ph.D. program, I earned a Bachelor of Science in Economics (Honors), Bachelor of Science in Statistics, and a Bachelor of Science in Business Administration with an emphasis in Finance from the [University of Missouri](https://missouri.edu/). 
 
