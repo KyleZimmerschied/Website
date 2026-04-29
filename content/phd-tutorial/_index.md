@@ -17,14 +17,14 @@ __Syllabus__
 
 __Weekly Slides__
 * Week 1: {{< staticref "media/phd-tutorial/Slides/Finance_PhD_Student_Workshop--Week 1 Slides.pdf" "newtab" >}}Overview of Finance PhD Program and Job Market{{< /staticref >}}
-* Week 2: {{< staticref "media/phd-tutorial/Slides/Finance_PhD_Student_Workshop--Week 2 Slides" "newtab" >}}Creating Research Ideas{{< /staticref >}}
-* Week 3: {{< staticref "media/phd-tutorial/Slides/Finance_PhD_Student_Workshop--Week 3 Slides" "newtab" >}}Pitching Research Ideas and Giving Feedback{{< /staticref >}}
-* Week 4: {{< staticref "media/phd-tutorial/Slides/Finance_PhD_Student_Workshop--Week 4 Slides" "newtab" >}}Writing Finance Papers and Project Planning{{< /staticref >}}
-* Week 5: {{< staticref "media/phd-tutorial/Slides/Finance_PhD_Student_Workshop--Week 5 Slides" "newtab" >}}Identification and Research Design{{< /staticref >}}
-* Week 6: {{< staticref "media/phd-tutorial/Slides/Finance_PhD_Student_Workshop--Week 6 Slides" "newtab" >}}Cleaning Data and Efficient Research Workflows{{< /staticref >}}
-* Week 7: {{< staticref "media/phd-tutorial/Slides/Finance_PhD_Student_Workshop--Week 7 Slides" "newtab" >}}Producing Tables Workflow{{< /staticref >}}
-* Week 8: {{< staticref "media/phd-tutorial/Slides/Finance_PhD_Student_Workshop--Week 8 Slides" "newtab" >}}Producing Figures Workflow{{< /staticref >}}
-* Week 9: {{< staticref "media/phd-tutorial/Slides/Finance_PhD_Student_Workshop--Week 9 Slides" "newtab" >}}LaTeX Workflow{{< /staticref >}}
+* Week 2: {{< staticref "media/phd-tutorial/Slides/Finance_PhD_Student_Workshop--Week 2 Slides.pdf" "newtab" >}}Creating Research Ideas{{< /staticref >}}
+* Week 3: {{< staticref "media/phd-tutorial/Slides/Finance_PhD_Student_Workshop--Week 3 Slides.pdf" "newtab" >}}Pitching Research Ideas and Giving Feedback{{< /staticref >}}
+* Week 4: {{< staticref "media/phd-tutorial/Slides/Finance_PhD_Student_Workshop--Week 4 Slides.pdf" "newtab" >}}Writing Finance Papers and Project Planning{{< /staticref >}}
+* Week 5: {{< staticref "media/phd-tutorial/Slides/Finance_PhD_Student_Workshop--Week 5 Slides.pdf" "newtab" >}}Identification and Research Design{{< /staticref >}}
+* Week 6: {{< staticref "media/phd-tutorial/Slides/Finance_PhD_Student_Workshop--Week 6 Slides.pdf" "newtab" >}}Cleaning Data and Efficient Research Workflows{{< /staticref >}}
+* Week 7: {{< staticref "media/phd-tutorial/Slides/Finance_PhD_Student_Workshop--Week 7 Slides.pdf" "newtab" >}}Producing Tables Workflow{{< /staticref >}}
+* Week 8: {{< staticref "media/phd-tutorial/Slides/Finance_PhD_Student_Workshop--Week 8 Slides.pdf" "newtab" >}}Producing Figures Workflow{{< /staticref >}}
+* Week 9: {{< staticref "media/phd-tutorial/Slides/Finance_PhD_Student_Workshop--Week 9 Slides.pdf" "newtab" >}}LaTeX Workflow{{< /staticref >}}
 * Week 10: {{< staticref "media/phd-tutorial/Slides/Finance_PhD_Student_Workshop--Week 10 Slides.pdf" "newtab" >}}How to Write an Introduction{{< /staticref >}}
 * Week 11: {{< staticref "media/phd-tutorial/Slides/Finance_PhD_Student_Workshop--Week 11 Slides.pdf" "newtab" >}}Writing Data, Institutional Details, Methods, and Results{{< /staticref >}}
 * Week 12: {{< staticref "media/phd-tutorial/Slides/Finance_PhD_Student_Workshop--Week 12 Slides.pdf" "newtab" >}}Navigating Referees, Revisions, and Resubmissions{{< /staticref >}}
