@@ -40,7 +40,7 @@ __Overleaf Demos__
         * Paper organization in Overleaf (for advanced_main.tex make sure to set LaTEX compiler to 2020 (Legacy))
 * {{< staticref "media/phd-tutorial/Demos/Sample_Overleaf_Presentation_PhD_Students.zip" "newtab" >}}Sample Overleaf Presentation{{< /staticref >}}
     * Covers:
-        *Sample Beamer layout and set-up
+        * Sample Beamer layout and set-up
 * {{< staticref "media/phd-tutorial/Demos/Sample_Overleaf_Advanced_Presentation_PhD_Students.zip" "newtab" >}}Advanced Overleaf Presentation{{< /staticref >}}
     * Covers:
-        *Advanced Beamer formatting (make sure to set LaTEX compiler to 2020 (Legacy))
+        * Advanced Beamer formatting (make sure to set LaTEX compiler to 2020 (Legacy))
