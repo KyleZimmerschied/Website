@@ -31,3 +31,16 @@ __Weekly Slides__
 * Week 13: {{< staticref "media/phd-tutorial/Slides/Finance_PhD_Student_Workshop--Week 13 Slides.pdf" "newtab" >}}Presenting Research and Beamer Workflow{{< /staticref >}}
 
 __Code and Workflow Files__
+__Overleaf Demos__
+
+* {{< staticref "media/phd-tutorial/Demos/Project_Overleaf_Overview.zip" "newtab" >}}Overview of coding best practices \& LaTEX paper formatting{{< /staticref >}}
+    * Covers:
+        * Tables (esttab / LaTeX integration)
+        * Figures (ggplot workflow)
+        * Paper organization in Overleaf (for advanced_main.tex make sure to set LaTEX compiler to 2020 (Legacy))
+* {{< staticref "media/phd-tutorial/Demos/Sample_Overleaf_Presentation_PhD_Students.zip" "newtab" >}}Sample Overleaf Presentation{{< /staticref >}}
+    * Covers:
+        *Sample Beamer layout and set-up
+* {{< staticref "media/phd-tutorial/Demos/Sample_Overleaf_Advanced_Presentation_PhD_Students.zip" "newtab" >}}Advanced Overleaf Presentation{{< /staticref >}}
+    * Covers:
+        *Advanced Beamer formatting (make sure to set LaTEX compiler to 2020 (Legacy))
