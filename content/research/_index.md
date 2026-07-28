@@ -10,9 +10,8 @@ headless: false
 
 ## __Published Papers__
 1. {{< staticref "media/Private_Foundations_Draft_BZ.pdf" "newtab" >}}"Investing with Purpose: Evidence from Private Foundations"{{< /staticref >}}
-* With [Matteo Binfare](https://sites.google.com/site/matteobinfare/)
+* With [Matteo Binfarè](https://sites.google.com/site/matteobinfare/)
     + Accepted at __the Journal of Finance__
-    + See the {{< staticref "media/Private Foundations Slides.pdf" "newtab" >}}slides{{< /staticref >}}
 + We study the asset allocation and investment performance of U.S. private foundations
 that support the charitable sector. Large foundations generated positive risk-adjusted
 returns before 2008, driven by early access to private equity and venture capital funds,
@@ -35,7 +34,6 @@ charitable giving.
 + Do private equity (PE) returns rise or fall with fund scale? A causal effect is difficult to identify because better managers can raise larger funds. We develop an instrument using donations to universities. Donations affect fund size because endowments are sensitive to donation income, have sticky relationships with PE managers, and signal fund quality to other Limited Partner investors. We show decreasing returns to scale: a 1\% size increase in fund size reduces net IRR by 0.1 percentage points. Larger funds do larger deals, which underperform.  We find no change in risk, in part because additional deals are more levered.
 
 3. {{< staticref "media/Income_Pooling Draft.pdf" "newtab" >}}"Diversifying Labor Income Risk: Evidence from Income Pooling"{{< /staticref >}}
-    + See the {{< staticref "media/Income_Pooling Slides.pdf" "newtab" >}}slides{{< /staticref >}}
 + This paper studies the effects of a contracting innovation which allows individuals to diversify
 their labor income risk by sharing labor income above a ceiling into a common pool. I use novel
 data from professional baseball players to document sign-up correlated with an individual’s level
@@ -54,7 +52,7 @@ information asymmetries.
     
 ## __Other Publications__
 1. {{< staticref "media/NBER University Debt.pdf" "newtab" >}}"The Role of Debt in Financing Higher Education"{{< /staticref >}}, 2024, _NBER: Financing Institutions of Higher Education_
-* With [Matteo Binfare](https://sites.google.com/site/matteobinfare/)
+* With [Matteo Binfarè](https://sites.google.com/site/matteobinfare/)
     + See the [preliminary version](https://www.nber.org/books-and-chapters/financing-institutions-higher-education/role-debt-financing-higher-education)
 
  
