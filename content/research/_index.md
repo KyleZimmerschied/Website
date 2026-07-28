@@ -24,14 +24,13 @@ for yield. Over time, a conservative asset allocation decreases real wealth, red
 charitable giving.
 
 ## __Working Papers__
-1. {{< staticref "media/Immigration and Municipal Bond Yields.pdf" "newtab" >}}"Should They Stay or Should They Go? Immigration and Municipal Bonds"{{< /staticref >}} 
+1. {{< staticref "media/Immigration and Municipal Bond Yields.pdf" "newtab" >}}"Immigration and Local Government Finances"{{< /staticref >}}
+* With [Jess Cornaggia](https://jcornaggia.github.io/), [Kimberly Cornaggia](https://directory.smeal.psu.edu/kjr15), and [Ryan Israelsen](https://sites.google.com/site/ryandisraelsen)
     + Semifinalist, Best Paper Award (Corporate Finance), FMA 2025
-    + See the {{< staticref "media/Immigration and Municipal Bond Yields Slides.pdf" "newtab" >}}slides{{< /staticref >}}
-+ Immigration stimulates economic growth, but it also increases the demand for local public resources. This paper causally examines the impact of immigration on the local government's access to finance to evaluate this trade-off. I find that immigration inflows improve local government access to finance, as evidenced by a decline in municipal bond yields. I instrument for current immigrants' settlement decisions using historical migration patterns of immigrants from 1880 onward, interacted with the flow of incoming immigrants. These effects are stronger for communities located further from the border and with a higher likelihood of labor shortages. Immigrants of higher education levels provide stronger benefits to the communities they settle in, but even reducing the stock of low-skilled, undocumented immigrants results in increased borrowing costs in the presence of labor shortages. The positive impact of immigration is driven by an expansion in the local labor market which results in long-term increases in profitability for the local government and an enhanced ability to fund collateral. These findings provide evidence of the positive benefits immigrants bring to local communities.
++ Immigration stimulates economic growth, but also increases demand for local public resources. This paper examines the net effect of immigration on local governments' fiscal health. We estimate the effects of legal and unauthorized immigration using a Bartik shift-share design constructed from individual-level U.S. Census data dating back to 1880 and court-order data on unauthorized immigrant inflows. We find that immigrant inflows improve local governments' access to finance, reducing municipal bond yields and improving local governments' fiscal health. These effects are strongest in counties with tighter labor markets and more financial slack and are present for both legal and unauthorized immigration. The benefits of immigration are driven by increasing employment and stronger operating margins as revenue growth, driven by increased sales tax and state intergovernmental transfers, outpaces expense growth in the long run.
 
 2. {{< staticref "media/PE_Endowment.pdf" "newtab" >}}"Does Fund Size Affect Private Equity Performance? Evidence from Donations to Private Universities"{{< /staticref >}}
 * With [Abhishek Bhardwaj](https://www.abhishek-bhardwaj.com/), [Abhinav Gupta](https://www.kenan-flagler.unc.edu/faculty/directory/abhinav-gupta/), and [Sabrina Howell](https://www.stern.nyu.edu/faculty/bio/sabrina-howell)
-    + See the {{< staticref "media/PE_Endowment Slides.pdf" "newtab" >}}slides{{< /staticref >}}
 
 + Do private equity (PE) returns rise or fall with fund scale? A causal effect is difficult to identify because better managers can raise larger funds. We develop an instrument using donations to universities. Donations affect fund size because endowments are sensitive to donation income, have sticky relationships with PE managers, and signal fund quality to other Limited Partner investors. We show decreasing returns to scale: a 1\% size increase in fund size reduces net IRR by 0.1 percentage points. Larger funds do larger deals, which underperform.  We find no change in risk, in part because additional deals are more levered.
 
@@ -49,7 +48,6 @@ information asymmetries.
 
     
 4. {{< staticref "media/Innovation Decline IPO Draft.pdf" "newtab" >}}"Does Innovation Decline Post-IPO?"{{< /staticref >}}
-    + See the {{< staticref "media/Innovation Decline IPO Slides.pdf" "newtab" >}}slides{{< /staticref >}}
 + Bernstein (2015) estimates that innovation quality decreases by 43 percent more post-IPO for firms that successfully go public to firms that file to     go public but ultimately withdrawal. I document that 54 percent of this magnitude is attributable to a negative survivorship bias from sample           selection. In addition, I find no effect when extending his results to 2012, partially attributable to the decline in relevance of his identification     strategy. I document an increase in trademark production for firms with completed IPOs which suggests public firms shift their innovative focus         towards commercialization. These results cast doubt on the adverse effects of going public on
     innovation and the recent IPO literature that instruments for IPO completion using
     the post-filing returns on the Nasdaq stock index.
@@ -58,6 +56,5 @@ information asymmetries.
 1. {{< staticref "media/NBER University Debt.pdf" "newtab" >}}"The Role of Debt in Financing Higher Education"{{< /staticref >}}, 2024, _NBER: Financing Institutions of Higher Education_
 * With [Matteo Binfare](https://sites.google.com/site/matteobinfare/)
     + See the [preliminary version](https://www.nber.org/books-and-chapters/financing-institutions-higher-education/role-debt-financing-higher-education)
-    + See the {{< staticref "media/NBER University Debt Slides.pdf" "newtab" >}}slides{{< /staticref >}}
 
  
