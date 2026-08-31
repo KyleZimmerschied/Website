@@ -40,12 +40,12 @@ headless: false
 
 <figure>
   <img src="/media/Photos/Mizzou_Graduation_3_Generations.jpg" alt="Graduation picture with my grandpa and dad">
-  <figcaption>Graduation Picture with My Grandpa and Dad</figcaption>
+  <figcaption>Graduation Picture with My Grandpa and Dad, Spring 2025</figcaption>
 </figure>
 
 <figure>
   <img src="/media/Photos/Mizzou_Graduation_Friends.jpg" alt="Graduation picture with my brother and friends">
-  <figcaption>Graduation Picture with My Brother and Friends</figcaption>
+  <figcaption>Graduation Picture with My Brother and Friends, Spring 2025</figcaption>
 </figure>
 
 <figure>
