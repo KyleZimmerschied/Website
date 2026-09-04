@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Practice questions for FINN 36003 Corporate Finance at the University of Arkansas.">
+  <title>FINN 36003 Practice</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="question-bank.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="course-lockup" href="https://kylezim.com/">
+      <span class="course-badge">36003</span>
+      <span><strong>Corporate Finance</strong><small>University of Arkansas</small></span>
+    </a>
+    <nav class="tabs" aria-label="Practice sections">
+      <button class="tab active" data-view="practice">Practice</button>
+      <button class="tab" data-view="browse">Browse</button>
+      <button class="tab" data-view="formulas">Formulas</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="practice-view" class="view active">
+      <div class="intro">
+        <p class="eyebrow">FINN 36003 · EXAM 1</p>
+        <h1>Practice exams</h1>
+        <p>Build a customized practice set from Chapters 1–4. Every question includes a worked explanation using the notation from class.</p>
+      </div>
+
+      <section class="summary-card" aria-label="Current selection">
+        <div class="summary-grid">
+          <div><span>Topics</span><strong id="summary-topics">All selected</strong></div>
+          <div><span>Difficulty</span><strong id="summary-difficulty">All levels</strong></div>
+          <div><span>Question types</span><strong id="summary-types">All types</strong></div>
+          <div><span>Matching the bank</span><strong id="summary-matches">0 matches</strong></div>
+          <div><span>Questions requested</span><strong id="summary-count">20</strong></div>
+          <div><span>Time allowed</span><strong id="summary-time">Untimed</strong></div>
+        </div>
+        <div class="bank-ring"><strong id="bank-count">0</strong><span>question bank</span></div>
+      </section>
+
+      <div class="builder-grid">
+        <fieldset class="panel topics-panel">
+          <legend>Topics</legend>
+          <div class="select-links"><button id="select-all">Select all</button><span>·</span><button id="select-none">Select none</button></div>
+          <div id="topic-list" class="topic-list"></div>
+        </fieldset>
+
+        <div class="controls-column">
+          <fieldset class="panel"><legend>Question type</legend><div id="type-options" class="pill-list"></div></fieldset>
+          <fieldset class="panel"><legend>Difficulty</legend><div id="difficulty-options" class="pill-list"></div><p class="hint">Choose no level to include all difficulties.</p></fieldset>
+          <fieldset class="panel">
+            <legend>Number of questions</legend>
+            <div class="stepper"><button id="minus-count" aria-label="Decrease">−</button><strong id="count-value">20</strong><button id="plus-count" aria-label="Increase">+</button></div>
+            <div class="quick-counts"><button data-count="5">5</button><button data-count="10">10</button><button class="selected" data-count="20">20</button><button data-count="40">40</button></div>
+          </fieldset>
+          <fieldset class="panel option-panel"><legend>Options</legend>
+            <label class="toggle-row"><input id="timed" type="checkbox"><span class="switch"></span><span><strong>Timed practice</strong><small>Allows about two minutes per question.</small></span></label>
+            <label class="toggle-row"><input id="instant" type="checkbox"><span class="switch"></span><span><strong>Show solutions straight away</strong><small>Useful while learning rather than testing.</small></span></label>
+            <label class="toggle-row"><input id="shuffle" type="checkbox" checked><span class="switch"></span><span><strong>Shuffle question order</strong><small>Mixes topics as an exam would.</small></span></label>
+            <label class="toggle-row"><input id="unseen" type="checkbox" checked><span class="switch"></span><span><strong>Favor questions not yet seen</strong><small>Progress is stored only in this browser.</small></span></label>
+          </fieldset>
+        </div>
+      </div>
+
+      <div class="builder-footer">
+        <p id="availability">0 questions available for this selection.</p>
+        <div><button id="generate" class="primary">Generate practice set</button><button id="exam-preset" class="secondary">Use Exam 1 preset</button><button id="reset" class="secondary">Reset choices</button></div>
+      </div>
+    </section>
+
+    <section id="session-view" class="view">
+      <div class="session-header"><div><p class="eyebrow">ACTIVE PRACTICE</p><h1 id="session-title">Practice set</h1><p id="session-meta"></p></div><div id="timer" class="timer" hidden>00:00</div></div>
+      <div id="question-container"></div>
+      <div class="session-actions"><button id="submit-session" class="primary">Submit practice set</button><button id="leave-session" class="secondary">Return to setup</button></div>
+      <section id="results" class="results" hidden></section>
+    </section>
+
+    <section id="browse-view" class="view">
+      <div class="intro"><p class="eyebrow">QUESTION BANK</p><h1>Browse by topic</h1><p>Review individual questions and reveal their worked solutions at your own pace.</p></div>
+      <div class="browse-tools"><label>Chapter <select id="browse-chapter"></select></label><label>Topic <select id="browse-topic"></select></label><label>Type <select id="browse-type"><option value="all">All types</option><option value="mc">Multiple choice</option><option value="quant">Quantitative</option></select></label></div>
+      <p id="browse-count" class="browse-count"></p><div id="browse-list"></div>
+    </section>
+
+    <section id="formulas-view" class="view">
+      <div class="intro"><p class="eyebrow">EXAM 1 REFERENCE</p><h1>Formula sheet</h1><p>This reproduces the formulas and notation provided for Chapters 1–4.</p></div>
+      <div id="formula-list" class="formula-list"></div>
+    </section>
+  </main>
+
+  <footer>Built for FINN 36003 Corporate Finance. This page runs entirely in your browser—no account, tracking, or submission to the instructor.</footer>
+</body>
+</html>
