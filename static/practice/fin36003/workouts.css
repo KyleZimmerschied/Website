@@ -1,0 +1,13 @@
+.workout-card{background:#fff;border:1px solid var(--line);border-radius:13px;padding:24px;margin-bottom:18px}
+.workout-card h2{color:var(--red);margin:13px 0 3px}
+.exhibit-wrap{overflow-x:auto;margin:18px 0}
+.exhibit{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.exhibit th,.exhibit td{padding:8px 12px;border:1px solid var(--line);text-align:right}
+.exhibit th:first-child{text-align:left}
+.exhibit thead th{background:#f1ece6}
+.workout-part{border-top:1px solid var(--line);padding:18px 0}
+.part-heading{display:flex;justify-content:space-between;gap:18px}
+.part-heading span{white-space:nowrap;color:var(--muted);font:500 12px var(--mono)}
+.workout-part textarea{width:100%;margin-top:12px;padding:11px;border:1px solid var(--line);border-radius:7px;resize:vertical;font:inherit}
+.workout-part .quant-answer{margin-top:12px}
+@media(max-width:780px){.part-heading{display:block}.part-heading span{display:block;margin-top:4px}}

@@ -9,7 +9,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="coverage.css">
+  <link rel="stylesheet" href="workouts.css">
   <script defer src="question-bank.js"></script>
+  <script defer src="question-bank-extension.js"></script>
+  <script defer src="workout-bank.js"></script>
   <script defer src="app.js"></script>
 </head>
 <body>
@@ -30,8 +34,13 @@
       <div class="intro">
         <p class="eyebrow">FINN 36003 · EXAM 1</p>
         <h1>Practice exams</h1>
-        <p>Build a customized practice set from Chapters 1–4. Every question includes a worked explanation using the notation from class.</p>
+        <p>Build a customized practice set from Chapters 1–4, practice one full workout, or simulate the 75-minute Exam 1 format. Every question includes a worked explanation using the notation from class.</p>
       </div>
+
+      <details class="coverage-panel">
+        <summary><span><strong>Aligned with the Exam 1 review</strong><small>See the key ideas and skills represented in the question bank.</small></span><span aria-hidden="true">+</span></summary>
+        <div id="coverage-list" class="coverage-list"></div>
+      </details>
 
       <section class="summary-card" aria-label="Current selection">
         <div class="summary-grid">
@@ -71,7 +80,7 @@
 
       <div class="builder-footer">
         <p id="availability">0 questions available for this selection.</p>
-        <div><button id="generate" class="primary">Generate practice set</button><button id="exam-preset" class="secondary">Use Exam 1 preset</button><button id="reset" class="secondary">Reset choices</button></div>
+        <div><button id="generate" class="primary">Generate practice set</button><button id="workout-preset" class="secondary">Practice one workout</button><button id="exam-preset" class="secondary">Simulate Exam 1</button><button id="reset" class="secondary">Reset choices</button></div>
       </div>
     </section>
 
