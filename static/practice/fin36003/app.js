@@ -46,16 +46,20 @@
     let ordered=$("#unseen").checked?[...shuffle(pool.filter(q=>!seen.has(q.id))),...shuffle(pool.filter(q=>seen.has(q.id)))]:shuffle(pool);
     if(!$("#shuffle").checked)ordered=pool;return ordered.slice(0,Math.min(n,ordered.length));
   }
+  function chooseBalancedMc(){
+    const extras=new Set(shuffle(bank.chapters).slice(0,2).map(c=>c.id));
+    return bank.chapters.flatMap(ch=>shuffle(bank.questions.filter(q=>q.kind==="mc"&&topicById[q.topic].chapter===ch.id)).slice(0,extras.has(ch.id)?3:2));
+  }
   function startSession(preset=false){
     let selected;
     if(preset){
-      const mc=shuffle(bank.questions.filter(q=>q.kind==="mc")).slice(0,10);
-      selected=mc;state.workouts=bank.workoutFamilies.map(f=>shuffle(bank.workouts.filter(w=>w.family===f.id))[0]);state.mode="exam";
+      selected=shuffle(chooseBalancedMc());const families=shuffle(bank.workoutFamilies).slice(0,4);
+      state.workouts=families.map(f=>shuffle(bank.workouts.filter(w=>w.family===f.id))[0]);state.mode="exam";
     } else {selected=chooseQuestions(eligible(),state.count);state.workouts=[];state.mode="custom";}
     if(!selected.length)return;
     state.session=selected;state.submitted=false;state.seconds=preset?75*60:selected.length*120;
     selected.forEach(q=>seen.add(q.id));localStorage.setItem("finn36003-seen",JSON.stringify([...seen]));
-    $("#session-title").textContent=preset?"Exam 1 simulation":"Custom practice set";$("#session-meta").textContent=preset?"10 conceptual multiple choice · 4 multi-part workouts · 100 points · 75 minutes":`${selected.length} questions · ${selected.filter(q=>q.kind==="mc").length} multiple choice · ${selected.filter(q=>q.kind==="quant").length} quantitative`;
+    $("#session-title").textContent=preset?"Exam 1 simulation":"Custom practice set";$("#session-meta").textContent=preset?"Review-style questions · 10 conceptual multiple choice · 4 multi-part workouts · 100 points · 75 minutes":`${selected.length} questions · ${selected.filter(q=>q.kind==="mc").length} multiple choice · ${selected.filter(q=>q.kind==="quant").length} quantitative`;
     $("#results").hidden=true;$("#submit-session").hidden=false;renderSession();showView("session");
     clearInterval(state.timer);const timer=$("#timer");timer.hidden=!(preset||$("#timed").checked);
     if(!timer.hidden){renderTimer();state.timer=setInterval(()=>{state.seconds--;renderTimer();if(state.seconds<=0){clearInterval(state.timer);gradeSession();}},1000);}

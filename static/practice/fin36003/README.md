@@ -6,9 +6,9 @@ This self-contained page is designed for the Chapters 1–4 Exam 1 material.
 
 - **Custom practice:** Filter the 80-question bank by topic, type, and difficulty.
 - **Workout practice:** Draw one complete 15-point, multi-part workout.
-- **Exam 1 simulation:** Draw 10 conceptual multiple-choice questions (40 points) and one workout from each of four families (60 points), with a 75-minute timer.
+- **Exam 1 simulation:** Draw 10 conceptual multiple-choice questions balanced across Chapters 1–4 (40 points) and four workouts from the five review families (60 points), with a 75-minute timer.
 
-The workout families are cash flow from assets, DuPont analysis, working-capital management, and financial planning and growth. Calculation parts are auto-graded. Interpretation parts reveal a model response and rubric for self-review.
+The workout families are cash flow from assets, DuPont analysis, working-capital management, financial planning and growth, and growth capacity. Calculation parts are auto-graded. Interpretation parts reveal a model response and rubric for self-review.
 
 ## Install in the Hugo repository
 
