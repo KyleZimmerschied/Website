@@ -1,5 +1,5 @@
 window.FIN36003_BANK = {
-  meta:{course:"FINN 36003",courseName:"Corporate Finance",instructor:"Kyle Zimmerschied",edition:"Exam 1 · Chapters 1–4",built:"September 2026"},
+  meta:{course:"FINN 36003",courseName:"Corporate Finance",instructor:"Kyle Zimmerschied",edition:"Exam 1 · Chapters 1–4",chaptersLabel:"Chapters 1–4",examId:"exam-1",examMinutes:75,mcCount:10,mcPoints:4,workoutCount:4,examPoints:100,progressKey:"finn36003-exam1-seen",built:"September 2026"},
   chapters:[
     {id:"ch1",label:"Chapter 1: Introduction to Corporate Finance"},
     {id:"ch2",label:"Chapter 2: Financial Statements, Taxes, and Cash Flow"},

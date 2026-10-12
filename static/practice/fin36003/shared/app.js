@@ -1,6 +1,18 @@
 (() => {
   "use strict";
   const bank = window.FIN36003_BANK;
+  const meta = {
+    examId:"exam",
+    edition:"Exam practice",
+    chaptersLabel:"course material",
+    examMinutes:75,
+    mcCount:10,
+    mcPoints:4,
+    workoutCount:4,
+    examPoints:100,
+    progressKey:"finn36003-seen",
+    ...bank.meta
+  };
   const $ = (s, root=document) => root.querySelector(s);
   const $$ = (s, root=document) => [...root.querySelectorAll(s)];
   const topicById = Object.fromEntries(bank.topics.map(t => [t.id,t]));
@@ -8,7 +20,7 @@
   const diffLabel = {e:"Easy",m:"Medium",h:"Hard"};
   const kindLabel = {mc:"Multiple choice",quant:"Quantitative"};
   const state = {topics:new Set(bank.topics.map(t=>t.id)),types:new Set(["mc","quant"]),diffs:new Set(),count:20,session:[],workouts:[],mode:"custom",timer:null,seconds:0,submitted:false};
-  const seen = new Set(JSON.parse(localStorage.getItem("finn36003-seen") || "[]"));
+  const seen = new Set(JSON.parse(localStorage.getItem(meta.progressKey) || "[]"));
 
   function esc(v){return String(v).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
   function countsFor(key, value){return bank.questions.filter(q=>q[key]===value).length;}
@@ -47,25 +59,28 @@
     if(!$("#shuffle").checked)ordered=pool;return ordered.slice(0,Math.min(n,ordered.length));
   }
   function chooseBalancedMc(){
-    const extras=new Set(shuffle(bank.chapters).slice(0,2).map(c=>c.id));
-    return bank.chapters.flatMap(ch=>shuffle(bank.questions.filter(q=>q.kind==="mc"&&topicById[q.topic].chapter===ch.id)).slice(0,extras.has(ch.id)?3:2));
+    const base=Math.floor(meta.mcCount/bank.chapters.length),remainder=meta.mcCount%bank.chapters.length;
+    const extras=new Set(shuffle(bank.chapters).slice(0,remainder).map(c=>c.id));
+    return bank.chapters.flatMap(ch=>shuffle(bank.questions.filter(q=>q.kind==="mc"&&topicById[q.topic].chapter===ch.id)).slice(0,base+(extras.has(ch.id)?1:0)));
   }
   function startSession(preset=false){
     let selected;
     if(preset){
-      selected=shuffle(chooseBalancedMc());const families=shuffle(bank.workoutFamilies).slice(0,4);
+      selected=shuffle(chooseBalancedMc());const configured=meta.simulationFamilies?.length?meta.simulationFamilies:shuffle(bank.workoutFamilies.map(f=>f.id)).slice(0,meta.workoutCount);const families=configured.map(id=>bank.workoutFamilies.find(f=>f.id===id)).filter(Boolean);
       state.workouts=families.map(f=>shuffle(bank.workouts.filter(w=>w.family===f.id))[0]);state.mode="exam";
     } else {selected=chooseQuestions(eligible(),state.count);state.workouts=[];state.mode="custom";}
     if(!selected.length)return;
-    state.session=selected;state.submitted=false;state.seconds=preset?75*60:selected.length*120;
-    selected.forEach(q=>seen.add(q.id));localStorage.setItem("finn36003-seen",JSON.stringify([...seen]));
-    $("#session-title").textContent=preset?"Exam 1 simulation":"Custom practice set";$("#session-meta").textContent=preset?"Review-style questions · 10 conceptual multiple choice · 4 multi-part workouts · 100 points · 75 minutes":`${selected.length} questions · ${selected.filter(q=>q.kind==="mc").length} multiple choice · ${selected.filter(q=>q.kind==="quant").length} quantitative`;
+    state.session=selected;state.submitted=false;state.seconds=preset?meta.examMinutes*60:selected.length*120;
+    selected.forEach(q=>seen.add(q.id));localStorage.setItem(meta.progressKey,JSON.stringify([...seen]));
+    $("#session-title").textContent=preset?`${meta.examId.replace("exam-","Exam ")} simulation`:"Custom practice set";$("#session-meta").textContent=preset?`Review-style questions · ${meta.mcCount} concise multiple choice · ${meta.workoutCount} multi-part workouts · ${meta.examPoints} points · ${meta.examMinutes} minutes`:`${selected.length} questions · ${selected.filter(q=>q.kind==="mc").length} multiple choice · ${selected.filter(q=>q.kind==="quant").length} quantitative`;
     $("#results").hidden=true;$("#submit-session").hidden=false;renderSession();showView("session");
     clearInterval(state.timer);const timer=$("#timer");timer.hidden=!(preset||$("#timed").checked);
     if(!timer.hidden){renderTimer();state.timer=setInterval(()=>{state.seconds--;renderTimer();if(state.seconds<=0){clearInterval(state.timer);gradeSession();}},1000);}
   }
   function startWorkout(){
-    state.session=[];state.workouts=[shuffle(bank.workouts)[0]];state.mode="workout";state.submitted=false;state.seconds=15*60;
+    const family=$("#workout-family").value;
+    const pool=family==="random"?bank.workouts:bank.workouts.filter(w=>w.family===family);
+    state.session=[];state.workouts=[shuffle(pool)[0]];state.mode="workout";state.submitted=false;state.seconds=15*60;
     $("#session-title").textContent="Workout practice";$("#session-meta").textContent="1 multi-part workout · 15 points · self-paced interpretation";
     $("#results").hidden=true;$("#submit-session").hidden=false;renderSession();showView("session");clearInterval(state.timer);$("#timer").hidden=true;
   }
@@ -101,9 +116,9 @@
     if(state.submitted)return;state.submitted=true;clearInterval(state.timer);let score=0,answered=0;
     state.session.forEach(q=>{const card=$(`.question-card[data-id="${q.id}"]`),response=getResponse(card,q);if(q.kind==="mc"?$("input:checked",card):$("input[type=number]",card).value!=="")answered++;if(isCorrect(q,response))score++;showFeedback(card,q,response,false);});
     if(state.workouts.length){
-      let autoEarned=state.mode==="exam"?score*4:0,autoPossible=state.mode==="exam"?state.session.length*4:0,selfPossible=0;
+      let autoEarned=state.mode==="exam"?score*meta.mcPoints:0,autoPossible=state.mode==="exam"?state.session.length*meta.mcPoints:0,selfPossible=0;
       state.workouts.forEach(w=>{const card=$(`.workout-card[data-id="${w.id}"]`);w.parts.forEach((p,j)=>{const part=$(`.workout-part[data-part="${j}"]`,card),box=$(".feedback",part);box.hidden=false;if(p.type==="text"){selfPossible+=p.points;const response=$("textarea",part).value.trim();if(response)answered++;box.innerHTML=`<h3>Self-review (${p.points} points)</h3><p>${esc(p.solution)}</p><ul>${p.rubric.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`;}else{const input=$("input",part),response=Number(input.value),correct=input.value!==""&&Number.isFinite(response)&&Math.abs(response-p.answer)<=p.tol;if(input.value!=="")answered++;autoPossible+=p.points;if(correct)autoEarned+=p.points;box.classList.toggle("correct",correct);box.innerHTML=`<h3>${correct?"Correct":"Review this part"} (${p.points} points)</h3><p><strong>Answer:</strong> ${esc(p.answer)} ${esc(p.unit||"")}</p><p>${esc(p.solution)}</p>`;}});});
-      const results=$("#results"),total=state.mode==="exam"?100:autoPossible+selfPossible;results.hidden=false;results.innerHTML=`<p class="eyebrow">RESULTS</p><strong class="score">${autoEarned}/${autoPossible}</strong><h2>Auto-graded points</h2><p>${selfPossible} interpretation ${selfPossible===1?"point requires":"points require"} self-review using the model responses and rubrics above. Your full practice set is worth ${total} points.</p>`;$("#submit-session").hidden=true;results.scrollIntoView({behavior:"smooth",block:"center"});return;
+      const results=$("#results"),total=state.mode==="exam"?meta.examPoints:autoPossible+selfPossible;results.hidden=false;results.innerHTML=`<p class="eyebrow">RESULTS</p><strong class="score">${autoEarned}/${autoPossible}</strong><h2>Auto-graded points</h2><p>${selfPossible} interpretation ${selfPossible===1?"point requires":"points require"} self-review using the model responses and rubrics above. Your full practice set is worth ${total} points.</p>`;$("#submit-session").hidden=true;results.scrollIntoView({behavior:"smooth",block:"center"});return;
     }
     const pct=Math.round(score/state.session.length*100),results=$("#results");results.hidden=false;results.innerHTML=`<p class="eyebrow">RESULTS</p><strong class="score">${score}/${state.session.length}</strong><h2>${pct}% correct</h2><p>You answered ${answered} of ${state.session.length} questions. Review the worked explanations above, then generate another set to reinforce weaker topics.</p>`;$("#submit-session").hidden=true;results.scrollIntoView({behavior:"smooth",block:"center"});
   }
@@ -119,6 +134,7 @@
   function renderBrowse(){const ch=$("#browse-chapter").value||"all",topic=$("#browse-topic").value||"all",kind=$("#browse-type").value;const qs=bank.questions.filter(q=>(ch==="all"||topicById[q.topic].chapter===ch)&&(topic==="all"||q.topic===topic)&&(kind==="all"||q.kind===kind));$("#browse-count").textContent=`Showing ${qs.length} questions.`;const host=$("#browse-list");host.innerHTML="";qs.forEach((q,i)=>host.append(questionCard(q,i,true)));}
   function renderFormulas(){const host=$("#formula-list");host.innerHTML="";bank.formulas.forEach(group=>{const box=document.createElement("section");box.className="formula-chapter";box.innerHTML=`<h2>${esc(chapterById[group.chapter].label)}</h2>${group.note?`<p><em>${esc(group.note)}</em></p>`:""}<div class="formula-grid">${group.items.map(([n,f])=>`<div class="formula"><strong>${esc(n)}</strong><div class="math">${esc(f)}</div></div>`).join("")}</div>`;host.append(box);});}
   function renderCoverage(){const host=$("#coverage-list");if(!host||!bank.reviewOutcomes)return;host.innerHTML=bank.reviewOutcomes.map(g=>`<section class="coverage-group"><h3>${esc(chapterById[g.chapter].label)}</h3><strong>Key ideas</strong><ul>${g.ideas.map(x=>`<li>${esc(x)}</li>`).join("")}</ul><strong>Key skills</strong><ul>${g.skills.map(x=>`<li>${esc(x)}</li>`).join("")}</ul></section>`).join("");}
+  function renderWorkoutFamilies(){const picker=$("#workout-family");picker.innerHTML=`<option value="random">Random workout</option>`+bank.workoutFamilies.map(f=>`<option value="${f.id}">${esc(f.label)}</option>`).join("");}
 
   $$(".tab").forEach(t=>t.onclick=()=>showView(t.dataset.view));
   $("#select-all").onclick=()=>{state.topics=new Set(bank.topics.map(t=>t.id));renderTopics();updateSummary();};
@@ -126,5 +142,12 @@
   $("#minus-count").onclick=()=>setCount(state.count-1);$("#plus-count").onclick=()=>setCount(state.count+1);$$(".quick-counts button").forEach(b=>b.onclick=()=>setCount(Number(b.dataset.count)));
   $("#timed").onchange=updateSummary;$("#generate").onclick=()=>startSession(false);$("#workout-preset").onclick=startWorkout;$("#exam-preset").onclick=()=>startSession(true);$("#submit-session").onclick=gradeSession;$("#leave-session").onclick=()=>{clearInterval(state.timer);showView("practice");};
   $("#reset").onclick=()=>{state.topics=new Set(bank.topics.map(t=>t.id));state.types=new Set(["mc","quant"]);state.diffs.clear();state.count=20;$$("input[type=checkbox]").forEach(x=>{if(["shuffle","unseen"].includes(x.id))x.checked=true;else if(!x.closest(".topic-row"))x.checked=false;});renderTopics();renderPills();updateSummary();};
-  $("#bank-count").textContent=bank.questions.length;renderTopics();renderPills();updateSummary();setupBrowse();renderFormulas();renderCoverage();
+  document.title=`FINN 36003 · ${meta.edition}`;
+  $("#edition-eyebrow").textContent=`FINN 36003 · ${meta.edition.toUpperCase()}`;
+  $("#edition-intro").textContent=`Build a customized practice set from ${meta.chaptersLabel}, practice one full workout, or simulate the ${meta.examMinutes}-minute ${meta.edition.split("·")[0].trim()} format. Every question includes a worked explanation using the notation from class.`;
+  $("#coverage-heading").textContent=`Aligned with the ${meta.edition.split("·")[0].trim()} review`;
+  $("#exam-preset").textContent=`Simulate ${meta.edition.split("·")[0].trim()}`;
+  $("#formula-eyebrow").textContent=`${meta.edition.split("·")[0].trim().toUpperCase()} REFERENCE`;
+  $("#formula-intro").textContent=`This reproduces the formulas and notation provided for ${meta.chaptersLabel}.`;
+  $("#bank-count").textContent=bank.questions.length;renderTopics();renderPills();updateSummary();setupBrowse();renderFormulas();renderCoverage();renderWorkoutFamilies();
 })();

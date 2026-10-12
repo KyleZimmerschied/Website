@@ -1,23 +1,47 @@
-# FINN 36003 practice site
+# FINN 36003 Practice Center
 
-This self-contained page is designed for the Chapters 1–4 Exam 1 material.
+This folder is a self-contained, client-side practice site for FINN 36003.
 
-## Student modes
+## Student-facing structure
 
-- **Custom practice:** Filter the 80-question bank by topic, type, and difficulty.
-- **Workout practice:** Draw one complete 15-point, multi-part workout.
-- **Exam 1 simulation:** Draw 10 conceptual multiple-choice questions balanced across Chapters 1–4 (40 points) and four workouts from the five review families (60 points), with a 75-minute timer.
+- `/practice/fin36003/` — exam-selection landing page
+- `/practice/fin36003/exam-1/` — Exam 1 Study, Chapters 1–4
+- `/practice/fin36003/exam-2/` — Exam 2 Study, Chapters 5–11
 
-The workout families are cash flow from assets, DuPont analysis, working-capital management, financial planning and growth, and growth capacity. Calculation parts are auto-graded. Interpretation parts reveal a model response and rubric for self-review.
+Exam 1 and Exam 2 use separate browser progress keys, so studying for one exam does not mark questions as seen for the other.
 
-## Install in the Hugo repository
+## Exam 2 content
 
-Copy this entire `fin36003` folder into `static/practice/`. Hugo/Netlify will publish it at `/practice/fin36003/`. Keep all HTML, CSS, and JavaScript files together because the page uses relative file paths.
+- 80 standalone questions: 40 concise multiple-choice and 40 quantitative
+- 16 questions in each of five content blocks
+- 30 multi-part workouts: five variants in each of six families
+  - Bond and stock valuation
+  - Investment criteria
+  - Expansion-project FCFF
+  - Break-even and operating leverage
+  - Replacement-project FCFF
+  - Equivalent annual cost
+- Formula reference aligned to the Exam 2 formula sheet
+- 75-minute simulation with 10 multiple-choice questions and four 15-point workouts
 
-## Add material later
+The simulation draws two multiple-choice questions from each content block and one workout from each primary exam family: valuation, investment criteria, expansion-project FCFF, and project analysis. Replacement and EAC remain available from the workout-family selector.
 
-- Add standalone questions to `question-bank-extension.js` using the existing schema.
-- Add new multi-part variants to `workout-bank.js`.
-- Add later chapters to the topic, formula, and review-alignment data before adding their questions.
+## Course-material alignment
 
-All content runs locally in the student's browser. No responses are sent to the instructor.
+The Exam 2 bank was written primarily from the instructor slides, clicker workbook, and Homework 3–4. The textbook practice files were treated as secondary coverage checks rather than the main source of wording or examples.
+
+Core numerical examples retained from class include the Walmart valuation and investment-criteria examples, the SpaceX expansion and replacement projects, the EAC machine comparison, the scenario NPVs, and the Starlink production-cell break-even analysis.
+
+## Deployment
+
+Copy the complete `fin36003` folder into:
+
+`C:\Users\kylez\Dropbox\Misc\Website\Website\static\practice`
+
+The resulting folder should be:
+
+`C:\Users\kylez\Dropbox\Misc\Website\Website\static\practice\fin36003`
+
+Do not copy only the `exam-2` subfolder; the exam pages rely on the shared JavaScript and CSS in `shared`.
+
+No build step or server-side component is required. The site stores seen-question history only in the student's browser using `localStorage`.
