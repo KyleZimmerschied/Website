@@ -14,23 +14,30 @@ Exam 1 and Exam 2 use separate browser progress keys, so studying for one exam d
 
 - 80 standalone questions: 40 concise multiple-choice and 40 quantitative
 - 16 questions in each of five content blocks
-- 30 multi-part workouts: five variants in each of six families
-  - Bond and stock valuation
+- 39 multi-part workouts across nine families
+  - Nonconstant-growth stock valuation
+  - Coupon-bond valuation
   - Investment criteria
+  - Mutually exclusive projects and crossover rates
   - Expansion-project FCFF
+  - Scenario and sensitivity analysis
   - Break-even and operating leverage
   - Replacement-project FCFF
   - Equivalent annual cost
 - Formula reference aligned to the Exam 2 formula sheet
 - 75-minute simulation with 10 multiple-choice questions and four 15-point workouts
 
-The simulation draws two multiple-choice questions from each content block and one workout from each primary exam family: valuation, investment criteria, expansion-project FCFF, and project analysis. Replacement and EAC remain available from the workout-family selector.
+The simulation draws two multiple-choice questions from each content block and one workout from each primary exam family: valuation, investment criteria, expansion-project FCFF, and project analysis. Coupon bonds, crossover rates, scenario and sensitivity analysis, replacement projects, and EAC remain available from the workout-family selector.
 
 ## Course-material alignment
 
 The Exam 2 bank was written primarily from the instructor slides, clicker workbook, and Homework 3–4. The textbook practice files were treated as secondary coverage checks rather than the main source of wording or examples.
 
 Core numerical examples retained from class include the Walmart valuation and investment-criteria examples, the SpaceX expansion and replacement projects, the EAC machine comparison, the scenario NPVs, and the Starlink production-cell break-even analysis.
+
+Selected expansion, replacement, and EAC workouts add working-capital releases,
+incremental employee training, sales below book value, and terminal resale values
+so students practice the same framework under meaningfully different assumptions.
 
 ## Deployment
 
