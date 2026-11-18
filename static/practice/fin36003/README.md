@@ -1,54 +1,56 @@
-# FINN 36003 Practice Center
+# FINN 36003 practice center
 
-This folder is a self-contained, client-side practice site for FINN 36003.
+This is a static browser-based practice platform for Kyle Zimmerschied’s Corporate Finance course at the University of Arkansas.
 
-## Student-facing structure
+## Install the update
 
-- `/practice/fin36003/` — exam-selection landing page
-- `/practice/fin36003/exam-1/` — Exam 1 Study, Chapters 1–4
-- `/practice/fin36003/exam-2/` — Exam 2 Study, Chapters 5–11
+The archive contains one `fin36003/` folder. Copy its **contents** into the existing repository folder:
 
-Exam 1 and Exam 2 use separate browser progress keys, so studying for one exam does not mark questions as seen for the other.
+`Website/static/practice/fin36003/`
 
-## Exam 2 content
+Avoid nesting a second `fin36003` inside that directory. Review and commit the changes through your normal GitHub workflow. This archive has not been published to the live website.
 
-- 80 standalone questions: 40 concise multiple-choice and 40 quantitative
-- 16 questions in each of five content blocks
-- 39 multi-part workouts across nine families
-  - Nonconstant-growth stock valuation
-  - Coupon-bond valuation
-  - Investment criteria
-  - Mutually exclusive projects and crossover rates
-  - Expansion-project FCFF
-  - Scenario and sensitivity analysis
-  - Break-even and operating leverage
-  - Replacement-project FCFF
-  - Equivalent annual cost
-- Formula reference aligned to the Exam 2 formula sheet
-- 75-minute simulation with 10 multiple-choice questions and four 15-point workouts
+The resulting paths are:
 
-The simulation draws two multiple-choice questions from each content block and one workout from each primary exam family: valuation, investment criteria, expansion-project FCFF, and project analysis. Coupon bonds, crossover rates, scenario and sensitivity analysis, replacement projects, and EAC remain available from the workout-family selector.
+- `/practice/fin36003/` — exam picker
+- `/practice/fin36003/exam-1/` — existing Exam 1 practice
+- `/practice/fin36003/exam-2/` — existing Exam 2 practice
+- `/practice/fin36003/exam-3/` — new Exam 3 practice
 
-## Course-material alignment
+No npm install, build step, server API, or account is needed. Existing Exam 1/2 banks and the shared application are unchanged. Their headers now link to Exam 3, and the course landing page includes a third exam card. Exam 3 has its own application file so its scoring changes do not affect earlier exams.
 
-The Exam 2 bank was written primarily from the instructor slides, clicker workbook, and Homework 3–4. The textbook practice files were treated as secondary coverage checks rather than the main source of wording or examples.
+## Try it locally
 
-Core numerical examples retained from class include the Walmart valuation and investment-criteria examples, the SpaceX expansion and replacement projects, the EAC machine comparison, the scenario NPVs, and the Starlink production-cell break-even analysis.
+Open `exam-3/index.html` in a browser. All question data, styles, and logic load from local files. Google fonts are optional; the site works with fallback fonts offline.
 
-Selected expansion, replacement, and EAC workouts add working-capital releases,
-incremental employee training, sales below book value, and terminal resale values
-so students practice the same framework under meaningfully different assumptions.
+For a local HTTP preview, run `python3 -m http.server 8000` from inside this folder and visit `http://localhost:8000/exam-3/`.
 
-## Deployment
+## New Exam 3 bank
 
-Copy the complete `fin36003` folder into:
+- 80 standalone questions: 40 multiple choice (three options each) and 40 quantitative.
+- 32 multipart workouts across eight families, with multiple numerical variants in every family.
+- Chapters 14–16 and 26: WACC/CAPM/dividend growth/bond yields; IPOs and capital raising; M&M Cases 1 and 2, distress costs, and pecking order; synergy, premiums, cash/stock payment, goodwill, and takeover resistance.
+- Public review topics and hypothetical parallel cases. No actual exam document, private exam solution, or student data is included.
+- Coverage is practice guidance, not a guarantee of questions or weights on the real exam.
 
-`C:\Users\kylez\Dropbox\Misc\Website\Website\static\practice`
+Workout families: CAPM WACC (5); dividend growth and bond YTM (3); IPO (5); no-tax M&M (3); tax-adjusted M&M (5); synergy including negative cases (3); cash versus fixed-share payment (5); explicit DCF (3).
 
-The resulting folder should be:
+## Practice and scoring
 
-`C:\Users\kylez\Dropbox\Misc\Website\Website\static\practice\fin36003`
+Custom sets use one point per standalone question. The 75-minute simulation draws ten MC questions (four points each) and one workout from each of CAPM WACC (14 points), IPO (12), tax M&M (18), and cash/stock M&A (21). This makes 105 available practice points reported out of 100.
 
-Do not copy only the `exam-2` subfolder; the exam pages rely on the shared JavaScript and CSS in `shared`.
+MC and numerical results are checked locally. Interpretation answers require student self-review against the displayed model response and rubric. A numerical answer worth two points can receive one self-assessed method point after an incorrect attempt if the student’s written setup supports it. Provisional scores identify pending interpretation reviews. No prose is AI-graded and no result is sent to the instructor.
 
-No build step or server-side component is required. The site stores seen-question history only in the student's browser using `localStorage`.
+Enter percentages as percentage points (8.50 means 8.50%) and amounts in the units shown. Solutions display two decimals; numerical answers retain unrounded precision. Default tolerance is 0.02 in the displayed unit. Calculations should carry intermediate precision.
+
+Exam 3 uses a separate `finn36003-exam3-seen-v1` browser-storage key for seen IDs, including workout variants. Responses are held only while the page remains open; they reset on reload. Practice continues if browser storage is unavailable or corrupted.
+
+## Edit content
+
+- `exam-3/question-bank.js`: metadata, chapters/topics, MC questions, formulas, and review coverage.
+- `exam-3/question-bank-extension.js`: standalone quantitative questions.
+- `exam-3/workout-bank.js`: all multipart cases, numeric solutions, model responses, and rubrics.
+- `exam-3/app.js`: Exam 3 filtering, selection, scoring, timer, feedback, and self-review.
+- `exam-3/exam3.css`: Exam 3 layout/accessibility additions to the existing shared visual styles.
+
+The formula tab is a study reference using class notation, not a promise that every reminder will appear on the printed exam formula sheet. Goodwill uses fair value of identifiable **net assets** (identifiable assets minus liabilities assumed). Operating enterprise value is bridged to equity by subtracting debt and adding excess cash exactly once. Capital-spending notation follows the course definition.
