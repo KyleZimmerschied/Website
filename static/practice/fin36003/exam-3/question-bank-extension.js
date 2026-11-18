@@ -1,7 +1,7 @@
-/* Additional single-output quantitative practice; answers retain full precision. */
+/* Single-output calculations for review and repeated practice. */
 window.FIN36003_BANK.questions.push(...[
   {
-    "id": "e3-q-01",
+    "id": "e3r2-q-01",
     "topic": "equity",
     "diff": "e",
     "kind": "quant",
@@ -12,7 +12,7 @@ window.FIN36003_BANK.questions.push(...[
     "solution": "Market-risk premium = 9.50% − 3.50% = 6.00%. RE = 3.50% + 1.20(6.00%) = 10.70%."
   },
   {
-    "id": "e3-q-02",
+    "id": "e3r2-q-02",
     "topic": "equity",
     "diff": "m",
     "kind": "quant",
@@ -23,7 +23,7 @@ window.FIN36003_BANK.questions.push(...[
     "solution": "D1 = 1.28(1.04) = $1.3312. RE = 1.3312/32 + 0.04 = 8.16%."
   },
   {
-    "id": "e3-q-03",
+    "id": "e3r2-q-03",
     "topic": "wacc",
     "diff": "e",
     "kind": "quant",
@@ -34,7 +34,7 @@ window.FIN36003_BANK.questions.push(...[
     "solution": "RD(1 − TC) = 6.40%(0.75) = 4.80%."
   },
   {
-    "id": "e3-q-04",
+    "id": "e3r2-q-04",
     "topic": "wacc",
     "diff": "m",
     "kind": "quant",
@@ -45,7 +45,7 @@ window.FIN36003_BANK.questions.push(...[
     "solution": "Market equity = 15 × 24 = $360 million. wE = 360/(360 + 120) = 75.00%; use market debt rather than book debt."
   },
   {
-    "id": "e3-q-05",
+    "id": "e3r2-q-05",
     "topic": "wacc",
     "diff": "e",
     "kind": "quant",
@@ -56,7 +56,7 @@ window.FIN36003_BANK.questions.push(...[
     "solution": "D = 0.9750 × $160 million = $156.00 million. The quote is a price percentage, not a yield."
   },
   {
-    "id": "e3-q-06",
+    "id": "e3r2-q-06",
     "topic": "wacc",
     "diff": "m",
     "kind": "quant",
@@ -67,7 +67,7 @@ window.FIN36003_BANK.questions.push(...[
     "solution": "WACC = 0.70(11.00%) + 0.30(5.00%)(0.80) = 8.90%."
   },
   {
-    "id": "e3-q-07",
+    "id": "e3r2-q-07",
     "topic": "dcf",
     "diff": "e",
     "kind": "quant",
@@ -78,7 +78,7 @@ window.FIN36003_BANK.questions.push(...[
     "solution": "EV = FCFF1/WACC = 18/0.09 = $200.00 million. This is operating enterprise value before the debt/cash bridge."
   },
   {
-    "id": "e3-q-08",
+    "id": "e3r2-q-08",
     "topic": "dcf",
     "diff": "m",
     "kind": "quant",
@@ -89,7 +89,7 @@ window.FIN36003_BANK.questions.push(...[
     "solution": "Equity = EV − debt + excess cash = 275 − 60 + 15 = $230.00 million."
   },
   {
-    "id": "e3-q-09",
+    "id": "e3r2-q-09",
     "topic": "ipo",
     "diff": "e",
     "kind": "quant",
@@ -100,7 +100,7 @@ window.FIN36003_BANK.questions.push(...[
     "solution": "Gross proceeds = 3 million × $22 = $66.00 million."
   },
   {
-    "id": "e3-q-10",
+    "id": "e3r2-q-10",
     "topic": "ipo",
     "diff": "e",
     "kind": "quant",
@@ -111,7 +111,7 @@ window.FIN36003_BANK.questions.push(...[
     "solution": "Net proceeds = 2.5 million × $18.80 = $47.00 million. Use the issuer price, not the public offer price."
   },
   {
-    "id": "e3-q-11",
+    "id": "e3r2-q-11",
     "topic": "ipo",
     "diff": "e",
     "kind": "quant",
@@ -122,7 +122,7 @@ window.FIN36003_BANK.questions.push(...[
     "solution": "Spread = 4 million × (15.00 − 14.25) = $3.00 million."
   },
   {
-    "id": "e3-q-12",
+    "id": "e3r2-q-12",
     "topic": "ipo",
     "diff": "e",
     "kind": "quant",
@@ -133,7 +133,7 @@ window.FIN36003_BANK.questions.push(...[
     "solution": "Underpricing per share = 32.20 − 28.00 = $4.20. This differs from the underwriting spread."
   },
   {
-    "id": "e3-q-13",
+    "id": "e3r2-q-13",
     "topic": "ipo",
     "diff": "m",
     "kind": "quant",
@@ -144,7 +144,7 @@ window.FIN36003_BANK.questions.push(...[
     "solution": "Underpricing = (18.40 − 16.00)/16.00 = 15.00%."
   },
   {
-    "id": "e3-q-14",
+    "id": "e3r2-q-14",
     "topic": "ipo",
     "diff": "m",
     "kind": "quant",
@@ -155,7 +155,7 @@ window.FIN36003_BANK.questions.push(...[
     "solution": "Money left on the table = 1.5 million × (25.00 − 20.00) = $7.50 million. This is an opportunity cost, not an additional cash fee."
   },
   {
-    "id": "e3-q-15",
+    "id": "e3r2-q-15",
     "topic": "ownership",
     "diff": "e",
     "kind": "quant",
@@ -166,7 +166,7 @@ window.FIN36003_BANK.questions.push(...[
     "solution": "Only the primary investment enters the company: $36.00 million. The founder receives the $14 million secondary sale proceeds."
   },
   {
-    "id": "e3-q-16",
+    "id": "e3r2-q-16",
     "topic": "ownership",
     "diff": "m",
     "kind": "quant",
@@ -177,7 +177,7 @@ window.FIN36003_BANK.questions.push(...[
     "solution": "Original ownership = 12/(12 + 3) = 80.00%. Their ownership percentage falls; that fact alone does not establish a loss in dollar wealth."
   },
   {
-    "id": "e3-q-17",
+    "id": "e3r2-q-17",
     "topic": "risk",
     "diff": "m",
     "kind": "quant",
@@ -188,7 +188,7 @@ window.FIN36003_BANK.questions.push(...[
     "solution": "NI = 1 − 3 = −$2 million. Equity return = −2/40 = −5.00%. This is the class’s simplified accounting return, not a full holding-period return."
   },
   {
-    "id": "e3-q-18",
+    "id": "e3r2-q-18",
     "topic": "mm1",
     "diff": "m",
     "kind": "quant",
@@ -199,7 +199,7 @@ window.FIN36003_BANK.questions.push(...[
     "solution": "RE = RA + (RA − RD)(D/E) = 10.00% + (10.00% − 4.00%)(0.75) = 14.50%."
   },
   {
-    "id": "e3-q-19",
+    "id": "e3r2-q-19",
     "topic": "mm1",
     "diff": "m",
     "kind": "quant",
@@ -210,7 +210,7 @@ window.FIN36003_BANK.questions.push(...[
     "solution": "wE = 90/150 = 0.60; wD = 60/150 = 0.40. WACC = 0.60(16%) + 0.40(6%) = 12.00%."
   },
   {
-    "id": "e3-q-20",
+    "id": "e3r2-q-20",
     "topic": "mm1",
     "diff": "e",
     "kind": "quant",
@@ -221,7 +221,7 @@ window.FIN36003_BANK.questions.push(...[
     "solution": "V = 15/0.10 = $150.00 million under either financing plan, assuming unchanged cash flows and no frictions."
   },
   {
-    "id": "e3-q-21",
+    "id": "e3r2-q-21",
     "topic": "mm2",
     "diff": "e",
     "kind": "quant",
@@ -232,7 +232,7 @@ window.FIN36003_BANK.questions.push(...[
     "solution": "Annual interest = 50(0.06) = $3 million. Annual tax shield = 3(0.20) = $0.60 million."
   },
   {
-    "id": "e3-q-22",
+    "id": "e3r2-q-22",
     "topic": "mm2",
     "diff": "e",
     "kind": "quant",
@@ -243,7 +243,7 @@ window.FIN36003_BANK.questions.push(...[
     "solution": "PV(shield) = 0.72/0.06 = $12.00 million. This applies to the specified perpetual shield and discount rate."
   },
   {
-    "id": "e3-q-23",
+    "id": "e3r2-q-23",
     "topic": "mm2",
     "diff": "m",
     "kind": "quant",
@@ -254,7 +254,7 @@ window.FIN36003_BANK.questions.push(...[
     "solution": "Unlevered FCFF = EBIT(1 − TC) = 12(0.75) = $9 million. VU = 9/0.10 = $90.00 million."
   },
   {
-    "id": "e3-q-24",
+    "id": "e3r2-q-24",
     "topic": "mm2",
     "diff": "e",
     "kind": "quant",
@@ -265,7 +265,7 @@ window.FIN36003_BANK.questions.push(...[
     "solution": "PV(shield) = TC × D = 0.25(40) = $10 million. VL = 90 + 10 = $100.00 million."
   },
   {
-    "id": "e3-q-25",
+    "id": "e3r2-q-25",
     "topic": "mm2",
     "diff": "e",
     "kind": "quant",
@@ -276,7 +276,7 @@ window.FIN36003_BANK.questions.push(...[
     "solution": "E = VL − D = 100 − 40 = $60.00 million."
   },
   {
-    "id": "e3-q-26",
+    "id": "e3r2-q-26",
     "topic": "mm2",
     "diff": "m",
     "kind": "quant",
@@ -287,7 +287,7 @@ window.FIN36003_BANK.questions.push(...[
     "solution": "RE = 10.00% + (10.00% − 4.00%)(2/3)(0.75) = 13.00%."
   },
   {
-    "id": "e3-q-27",
+    "id": "e3r2-q-27",
     "topic": "mm2",
     "diff": "m",
     "kind": "quant",
@@ -298,7 +298,7 @@ window.FIN36003_BANK.questions.push(...[
     "solution": "WACC = 0.60(13.00%) + 0.40(4.00%)(0.75) = 9.00%."
   },
   {
-    "id": "e3-q-28",
+    "id": "e3r2-q-28",
     "topic": "tradeoff",
     "diff": "m",
     "kind": "quant",
@@ -309,7 +309,7 @@ window.FIN36003_BANK.questions.push(...[
     "solution": "ΔV = added benefits − added expected costs = 2.40 − 3.10 = −$0.70 million. This increment should be rejected under the static trade-off model."
   },
   {
-    "id": "e3-q-29",
+    "id": "e3r2-q-29",
     "topic": "premium",
     "diff": "e",
     "kind": "quant",
@@ -320,7 +320,7 @@ window.FIN36003_BANK.questions.push(...[
     "solution": "Operating EV = 21/0.10 = $210.00 million. Use a separate bridge for debt and excess cash."
   },
   {
-    "id": "e3-q-30",
+    "id": "e3r2-q-30",
     "topic": "premium",
     "diff": "m",
     "kind": "quant",
@@ -331,7 +331,7 @@ window.FIN36003_BANK.questions.push(...[
     "solution": "Equity value = 210 − 35 + 5 = $180.00 million. Do not compare an equity purchase price directly with EV without this bridge."
   },
   {
-    "id": "e3-q-31",
+    "id": "e3r2-q-31",
     "topic": "synergy",
     "diff": "m",
     "kind": "quant",
@@ -342,7 +342,7 @@ window.FIN36003_BANK.questions.push(...[
     "solution": "ΔFCFF = 41 − (30 + 14) = −$3.00 million. The combination has negative operating synergy."
   },
   {
-    "id": "e3-q-32",
+    "id": "e3r2-q-32",
     "topic": "synergy",
     "diff": "e",
     "kind": "quant",
@@ -353,7 +353,7 @@ window.FIN36003_BANK.questions.push(...[
     "solution": "PV(synergy) = 4.80/0.08 = $60.00 million. The incremental cash flow is already net of necessary costs."
   },
   {
-    "id": "e3-q-33",
+    "id": "e3r2-q-33",
     "topic": "premium",
     "diff": "e",
     "kind": "quant",
@@ -364,7 +364,7 @@ window.FIN36003_BANK.questions.push(...[
     "solution": "Target value to buyer = 180 + 60 = $240.00 million. This is the simplified equity price ceiling for a zero-NPV purchase."
   },
   {
-    "id": "e3-q-34",
+    "id": "e3r2-q-34",
     "topic": "premium",
     "diff": "e",
     "kind": "quant",
@@ -375,7 +375,7 @@ window.FIN36003_BANK.questions.push(...[
     "solution": "Premium = equity price − standalone equity value = 215 − 180 = $35.00 million."
   },
   {
-    "id": "e3-q-35",
+    "id": "e3r2-q-35",
     "topic": "premium",
     "diff": "m",
     "kind": "quant",
@@ -386,7 +386,7 @@ window.FIN36003_BANK.questions.push(...[
     "solution": "NPV = 180 + 60 − 215 = $25.00 million. Equivalently, $60 million synergy less $35 million premium."
   },
   {
-    "id": "e3-q-36",
+    "id": "e3r2-q-36",
     "topic": "payment",
     "diff": "m",
     "kind": "quant",
@@ -397,7 +397,7 @@ window.FIN36003_BANK.questions.push(...[
     "solution": "Post-deal equity = 600 + 150 + 50 − 175 = $625 million. Divide by 20 million unchanged shares: $31.25. The original equity already included cash."
   },
   {
-    "id": "e3-q-37",
+    "id": "e3r2-q-37",
     "topic": "payment",
     "diff": "m",
     "kind": "quant",
@@ -408,7 +408,7 @@ window.FIN36003_BANK.questions.push(...[
     "solution": "Combined equity = 600 + 150 + 50 = $800 million; combined shares = 20 + 5 = 25 million. Value per share = $32.00."
   },
   {
-    "id": "e3-q-38",
+    "id": "e3r2-q-38",
     "topic": "payment",
     "diff": "m",
     "kind": "quant",
@@ -419,7 +419,7 @@ window.FIN36003_BANK.questions.push(...[
     "solution": "Post-deal value per share = 800/25 = $32. Target owners receive 5 × $32 = $160.00 million, irrespective of the original quote."
   },
   {
-    "id": "e3-q-39",
+    "id": "e3r2-q-39",
     "topic": "goodwill",
     "diff": "e",
     "kind": "quant",
@@ -430,7 +430,7 @@ window.FIN36003_BANK.questions.push(...[
     "solution": "Identifiable net assets = 240 − 45 = $195 million. Goodwill = 260 − 195 = $65.00 million."
   },
   {
-    "id": "e3-q-40",
+    "id": "e3r2-q-40",
     "topic": "payment",
     "diff": "h",
     "kind": "quant",

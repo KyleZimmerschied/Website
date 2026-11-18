@@ -1,54 +1,65 @@
-# FINN 36003 Practice Center
+# FINN 36003 practice center
 
-This folder is a self-contained, client-side practice site for FINN 36003.
+Static study platform for Corporate Finance at the University of Arkansas.
 
-## Student-facing structure
+## Update an already installed Exam 3
 
-- `/practice/fin36003/` — exam-selection landing page
-- `/practice/fin36003/exam-1/` — Exam 1 Study, Chapters 1–4
-- `/practice/fin36003/exam-2/` — Exam 2 Study, Chapters 5–11
+Copy the six files inside this package's `fin36003/exam-3/` into your existing
+`static/practice/fin36003/exam-3/`, replacing the matching files. Keep the folder
+itself and all other exam/shared folders. This is sufficient for the practice
+revision; the homepage still correctly lists 80 questions and 32 workouts.
 
-Exam 1 and Exam 2 use separate browser progress keys, so studying for one exam does not mark questions as seen for the other.
+Start a fresh local preview, review the changes, and publish normally. After
+deployment, reload the Exam 3 page with Ctrl+F5. Revised script URLs include a
+version query to reduce old/new bank mismatches from cached assets.
 
-## Exam 2 content
+## Full installation or recovery
 
-- 80 standalone questions: 40 concise multiple-choice and 40 quantitative
-- 16 questions in each of five content blocks
-- 39 multi-part workouts across nine families
-  - Nonconstant-growth stock valuation
-  - Coupon-bond valuation
-  - Investment criteria
-  - Mutually exclusive projects and crossover rates
-  - Expansion-project FCFF
-  - Scenario and sensitivity analysis
-  - Break-even and operating leverage
-  - Replacement-project FCFF
-  - Equivalent annual cost
-- Formula reference aligned to the Exam 2 formula sheet
-- 75-minute simulation with 10 multiple-choice questions and four 15-point workouts
+This package contains a complete `fin36003` folder, including Exams 1 and 2 and
+all five shared assets. Copy its contents into the existing project directory:
 
-The simulation draws two multiple-choice questions from each content block and one workout from each primary exam family: valuation, investment criteria, expansion-project FCFF, and project analysis. Coupon bonds, crossover rates, scenario and sensitivity analysis, replacement projects, and EAC remain available from the workout-family selector.
+`static/practice/fin36003/`
 
-## Course-material alignment
+Merge existing folders and replace matching files. Avoid creating a nested
+`fin36003/fin36003` directory. Preview through the normal website workflow,
+then commit and publish. Open `/practice/fin36003/` for the exam picker.
 
-The Exam 2 bank was written primarily from the instructor slides, clicker workbook, and Homework 3–4. The textbook practice files were treated as secondary coverage checks rather than the main source of wording or examples.
+For local use without a web server, open `exam-3/index.html`. The questions and
+styles are local; Google fonts are optional.
 
-Core numerical examples retained from class include the Walmart valuation and investment-criteria examples, the SpaceX expansion and replacement projects, the EAC machine comparison, the scenario NPVs, and the Starlink production-cell break-even analysis.
+## Exam 3 mixed review practice
 
-Selected expansion, replacement, and EAC workouts add working-capital releases,
-incremental employee training, sales below book value, and terminal resale values
-so students practice the same framework under meaningfully different assumptions.
+The bank contains 80 standalone questions (40 MC and 40 quantitative), plus
+32 multipart cases across eight workout families. The reference tab and the
+worked solutions use the notation introduced in class.
 
-## Deployment
+The 75-minute simulation uses 10 MC questions and four workouts. MC selection
+covers all four chapters. Workouts are sampled without repeated families,
+cover at least three chapters, and include no more than two cases from any
+chapter. All eight families can appear; combinations and workout order vary.
+Choices are shuffled for each practice attempt. Case tasks vary within each
+family rather than repeating one calculation ladder with new numbers.
 
-Copy the complete `fin36003` folder into:
+Practice point totals vary by selected case. Results show earned points out of
+available points, and a practice percentage. They are learning feedback rather
+than a forecast of an exam score or question arrangement.
 
-`C:\Users\kylez\Dropbox\Misc\Website\Website\static\practice`
+Numeric and MC responses are checked in the browser. Interpretation points and
+one-point method credit require honest self-review using the model responses.
+No prose is AI-graded and no responses are sent to the instructor.
 
-The resulting folder should be:
+The Exam 3 revision uses the browser key `finn36003-exam3-seen-v2` so revised
+questions and cases start with fresh seen-question history. Exam 1/2 history is
+separate. Answers are not retained after a reload.
 
-`C:\Users\kylez\Dropbox\Misc\Website\Website\static\practice\fin36003`
+## Files
 
-Do not copy only the `exam-2` subfolder; the exam pages rely on the shared JavaScript and CSS in `shared`.
+- `exam-3/question-bank.js`: MC questions, metadata, topics, and formulas.
+- `exam-3/question-bank-extension.js`: standalone calculations.
+- `exam-3/workout-bank.js`: varied cases, solutions, and self-review rubrics.
+- `exam-3/app.js`: practice selection, checking, timer, and feedback.
+- `exam-3/exam3.css`: layout additions.
+- `shared/`: shared assets required by the study pages.
 
-No build step or server-side component is required. The site stores seen-question history only in the student's browser using `localStorage`.
+No instructor-only alignment report, exam source, or private answer key is
+included in this website package.

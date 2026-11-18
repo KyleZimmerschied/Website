@@ -11,11 +11,11 @@
   <link rel="stylesheet" href="../shared/styles.css">
   <link rel="stylesheet" href="../shared/coverage.css">
   <link rel="stylesheet" href="../shared/workouts.css">
-  <link rel="stylesheet" href="exam3.css">
-  <script defer src="question-bank.js"></script>
-  <script defer src="question-bank-extension.js"></script>
-  <script defer src="workout-bank.js"></script>
-  <script defer src="app.js"></script>
+  <link rel="stylesheet" href="exam3.css?v=review2">
+  <script defer src="question-bank.js?v=review2"></script>
+  <script defer src="question-bank-extension.js?v=review2"></script>
+  <script defer src="workout-bank.js?v=review2"></script>
+  <script defer src="app.js?v=review2"></script>
 </head>
 <body>
   <header class="site-header">
@@ -35,13 +35,13 @@
       <div class="intro">
         <p id="edition-eyebrow" class="eyebrow">FINN 36003 · EXAM 3</p>
         <h1>Practice exams</h1>
-        <p id="edition-intro">Build a custom set, work through one multipart case, or try a 75-minute simulation covering cost of capital, raising capital, capital structure, and M&amp;A. Each answer includes a worked explanation.</p>
+        <p id="edition-intro">Build a custom set, work through one multipart case, or try 75 minutes of mixed review practice across cost of capital, raising capital, capital structure, and M&amp;A. Each answer includes a worked explanation.</p>
         <p class="exam-switch"><a href="../exam-1/">Exam 1</a><span aria-hidden="true"> · </span><a href="../exam-2/">Exam 2</a><span aria-hidden="true"> · </span><strong>Exam 3</strong></p>
         <p class="bank-detail">80 quick questions · 32 multipart workouts · 8 workout families</p>
       </div>
 
       <details class="coverage-panel">
-        <summary><span><strong id="coverage-heading">Aligned with the Exam 3 review</strong><small>See the key ideas and skills represented in the question bank.</small></span><span aria-hidden="true">+</span></summary>
+        <summary><span><strong id="coverage-heading">Practice across the review topics</strong><small>See the key ideas and skills represented in the question bank.</small></span><span aria-hidden="true">+</span></summary>
         <div id="coverage-list" class="coverage-list"></div>
       </details>
 
@@ -81,12 +81,12 @@
         </div>
       </div>
 
-      <p class="practice-note"><strong>Simulation:</strong> 10 multiple-choice questions at 4 points each, plus four workouts. There are 105 available points, reported out of 100. These are practice weights. Numerical answers are checked automatically; interpretation uses model responses and self-review rubrics.</p>
+      <p class="practice-note"><strong>Mixed simulation:</strong> 10 multiple-choice questions and four workouts sampled from the full review bank. Each set includes all four chapters in its multiple-choice section and at least three chapters in its workouts. Cases, combinations, answer choices, and workout order vary. Practice point totals depend on the selected cases. Numerical answers are checked automatically; interpretation uses self-review rubrics.</p>
 
       <div class="builder-footer">
         <p id="availability">0 questions available for this selection.</p>
         <div class="workout-picker"><label for="workout-family">Workout family</label><select id="workout-family"></select></div>
-        <div><button id="generate" class="primary">Generate practice set</button><button id="workout-preset" class="secondary">Practice one workout</button><button id="exam-preset" class="secondary">Simulate Exam 3</button><button id="reset" class="secondary">Reset choices</button></div>
+        <div><button id="generate" class="primary">Generate practice set</button><button id="workout-preset" class="secondary">Practice one workout</button><button id="exam-preset" class="secondary">Start mixed simulation</button><button id="reset" class="secondary">Reset choices</button></div>
       </div>
     </section>
 
@@ -110,6 +110,6 @@
     </section>
   </main>
 
-  <footer>FINN 36003 Corporate Finance · Exam 3 practice. Hypothetical cases and public-review topics; not the exam. Runs in your browser—no account, analytics, or answer submission to the instructor. Answers reset when you reload; only seen-question history is stored.</footer>
+  <footer>FINN 36003 Corporate Finance · Exam 3 practice. Hypothetical cases and public-review topics; for repeated practice. Runs in your browser—no account, analytics, or answer submission to the instructor. Answers reset when you reload; only seen-question history is stored.</footer>
 </body>
 </html>

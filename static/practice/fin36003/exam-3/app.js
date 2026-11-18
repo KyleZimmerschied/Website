@@ -1,4 +1,4 @@
-/* Exam 3 uses the existing practice layout with its own scoring and progress. */
+/* Mixed review practice. Topic coverage is balanced; combinations, cases, and order vary. */
 (() => {
   'use strict';
   const bank = window.FIN36003_BANK;
@@ -11,7 +11,7 @@
   const kindLabel = {mc:'Multiple choice', quant:'Quantitative'};
   const state = {topics:new Set(bank.topics.map(t => t.id)), types:new Set(['mc','quant']),
     diffs:new Set(), count:20, session:[], workouts:[], mode:'custom', timer:null,
-    deadline:0, seconds:0, submitted:false, autoEarned:0, autoPossible:0, selfPossible:0};
+    deadline:0, seconds:0, submitted:false, autoEarned:0, autoPossible:0, selfPossible:0, lastSimulationKey:''};
   let seen;
   try {
     const saved = JSON.parse(localStorage.getItem(meta.progressKey) || '[]');
@@ -72,8 +72,38 @@
     $('#generate').disabled=!pool.length;
   }
   function setCount(n) { state.count=Math.max(1,Math.min(100,n)); updateSummary(); }
+  function mixChoices(q) {
+    if (q.kind!=='mc') return q;
+    const options=shuffle(q.choices.map((text,i)=>({text,correct:i===q.correct})));
+    return {...q, choices:options.map(x=>x.text), correct:options.findIndex(x=>x.correct)};
+  }
   function chooseBalancedMc() {
-    return shuffle(bank.chapters.flatMap(ch => ordered(bank.questions.filter(q => q.kind==='mc' && topicById[q.topic].chapter===ch.id)).slice(0,meta.mcByChapter[ch.id])));
+    const base=Math.floor(meta.mcCount/bank.chapters.length);
+    const extraCount=meta.mcCount%bank.chapters.length;
+    const extras=new Set(shuffle(bank.chapters).slice(0,extraCount).map(ch=>ch.id));
+    return shuffle(bank.chapters.flatMap(ch=>ordered(bank.questions.filter(q=>q.kind==='mc' && topicById[q.topic].chapter===ch.id)).slice(0,base+(extras.has(ch.id)?1:0))));
+  }
+  function simulationFamilySets() {
+    const combinations=[];
+    function visit(start, chosen) {
+      if (chosen.length===meta.workoutCount) {
+        const counts={}; chosen.forEach(f=>counts[f.chapter]=(counts[f.chapter]||0)+1);
+        if (Object.keys(counts).length>=meta.simulationMinWorkoutChapters &&
+            Object.values(counts).every(n=>n<=meta.simulationMaxWorkoutsPerChapter)) combinations.push(chosen);
+        return;
+      }
+      for (let i=start;i<bank.workoutFamilies.length;i++) visit(i+1,[...chosen,bank.workoutFamilies[i]]);
+    }
+    visit(0,[]); return combinations;
+  }
+  function chooseSimulationWorkouts() {
+    const combinations=simulationFamilySets();
+    const key=set=>set.map(f=>f.id).sort().join('|');
+    const fresh=combinations.filter(set=>key(set)!==state.lastSimulationKey);
+    const chosen=shuffle(fresh.length?fresh:combinations)[0];
+    if (!chosen) throw new Error('No mixed workout selection is available.');
+    state.lastSimulationKey=key(chosen);
+    return shuffle(chosen.map(f=>ordered(bank.workouts.filter(w=>w.family===f.id))[0]));
   }
   function beginSession() {
     state.submitted=false;
@@ -95,11 +125,11 @@
   }
   function startSession(preset=false) {
     state.mode=preset?'exam':'custom';
-    state.session=preset?chooseBalancedMc():ordered(eligible(),$('#shuffle').checked).slice(0,state.count);
-    state.workouts=preset?meta.simulationFamilies.map(f => ordered(bank.workouts.filter(w=>w.family===f))[0]):[];
+    state.session=(preset?chooseBalancedMc():ordered(eligible(),$('#shuffle').checked).slice(0,state.count)).map(mixChoices);
+    state.workouts=preset?chooseSimulationWorkouts():[];
     if (!state.session.length) return;
-    $('#session-title').textContent=preset?'Exam 3 simulation':'Custom practice set';
-    $('#session-meta').textContent=preset?`10 multiple choice × 4 points + 4 multipart workouts · 105 available points, scored out of 100 · 75 minutes`:
+    $('#session-title').textContent=preset?'Exam 3 mixed practice':'Custom practice set';
+    $('#session-meta').textContent=preset?`${state.session.length} multiple choice × ${meta.mcPoints} points + ${state.workouts.length} mixed workouts · ${state.session.length*meta.mcPoints+state.workouts.reduce((sum,w)=>sum+points(w),0)} available practice points · ${meta.examMinutes} minutes`:
       `${state.session.length} questions · ${state.session.filter(q=>q.kind==='mc').length} multiple choice · ${state.session.filter(q=>q.kind==='quant').length} quantitative · 1 point each`;
     beginSession();
   }
@@ -209,8 +239,9 @@
     const method=$$('.method-point:checked',$('#question-container')).length;
     const total=state.autoPossible+state.selfPossible;
     const score=state.autoEarned+selfEarned+method;
-    const base=state.mode==='exam'?meta.scoreBase:total;
-    host.innerHTML=`<p class="eyebrow">${pending?'PROVISIONAL RESULT':'SELF-REVIEWED RESULT'}</p><strong class="score">${score}/${base}</strong><h2>${pending?`${pending} interpretation ${pending===1?'part still needs':'parts still need'} self-review`:'Practice scoring complete'}</h2><p>${state.autoEarned}/${state.autoPossible} automatically graded points + ${selfEarned}/${state.selfPossible} self-assessed interpretation points + ${method} self-assessed method ${method===1?'point':'points'}.</p><p>${state.mode==='exam'?'105 points are available and the practice score is reported out of 100; it can exceed 100. These are practice weights, not a promise about exam content.':`This workout has ${total} available points.`} Interpretation and method credit depend on your honest review of the rubric; they are not independently verified.</p>`;
+    const base=total;
+    const percentage=Math.round(100*score/total);
+    host.innerHTML=`<p class="eyebrow">${pending?'PROVISIONAL RESULT':'SELF-REVIEWED RESULT'}</p><strong class="score">${score}/${base}</strong><h2>${pending?`${pending} interpretation ${pending===1?'part still needs':'parts still need'} self-review`:'Practice scoring complete'}</h2><p>${state.autoEarned}/${state.autoPossible} automatically graded points + ${selfEarned}/${state.selfPossible} self-assessed interpretation points + ${method} self-assessed method ${method===1?'point':'points'}.</p><p>${state.mode==='exam'?`${percentage}% of the ${total} practice points available. Point totals vary with the selected cases; this is a learning score, not a predicted exam grade.`:`This workout has ${total} available points.`} Interpretation and method credit depend on your honest review of the rubric; they are not independently verified.</p>`;
   }
   function showView(name) {
     $$('.view').forEach(v=>v.classList.toggle('active',v.id===`${name}-view`));
